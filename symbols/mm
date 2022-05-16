@@ -139,8 +139,8 @@ xkb_symbols "mnw" {
     key <AE08> {[    U1048,      U1002,            8,    asterisk  ]};
     key <AE09> {[    U1049,  parenleft,            9,   parenleft  ]};
     key <AE10> {[    U1040, parenright,            0,  parenright  ]};
-    key <AE11> {[    minus,      U0078,        minus,  underscore  ]};
-    key <AE12> {[    equal,       plus,        equal,        plus  ]};
+    key <AE11> {[    minus,   multiply,   underscore,        none  ]};
+    key <AE12> {[    equal,       plus,     division,        none  ]};
 
     key <AD01> {[    U1006,      U105B,            q,           Q  ]};
     key <AD02> {[    U1010,      U101D,            w,           W  ]};
@@ -177,7 +177,7 @@ xkb_symbols "mnw" {
     key <AB07> {[    U102C,       U1054,           m,           M  ]};
     key <AB08> {[    U101A,       U105E,       comma,        less  ]};
     key <AB09> {[    U105C,       U1055,      period,     greater  ]};
-    key <AB10> {[    U104B,       U104A                            ]};
+    key <AB10> {[    U104B,       U104A,       slash,    question  ]};
 };
 
 
