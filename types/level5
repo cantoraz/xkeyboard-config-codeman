@@ -54,10 +54,9 @@ default partial xkb_types "default" {
     };
 
     type "EIGHT_LEVEL_LEVEL_FIVE_LOCK" {
-      // Level5-Lock is implemented by using NumLock, because a real modifier
-      // is required.
+        // Level5-Lock is implemented with virtual modifier NumLock.
 
-        modifiers = Shift + Lock + LevelThree + NumLock + LevelFive;
+        modifiers = Shift + Lock + LevelThree + LevelFive + NumLock;
 
         map[None]                                    = Level1;
         map[Shift]                                   = Level2;
@@ -116,10 +115,9 @@ default partial xkb_types "default" {
     };
 
     type "EIGHT_LEVEL_ALPHABETIC_LEVEL_FIVE_LOCK" {
-      // Level5-Lock is implemented by using NumLock, because a real modifier
-      // is required.
+        // Level5-Lock is implemented with virtual modifier NumLock.
 
-        modifiers = Shift + Lock + LevelThree + NumLock + LevelFive;
+        modifiers = Shift + Lock + LevelThree + LevelFive + NumLock;
 
         map[None]                                    = Level1;
         map[Shift]                                   = Level2;
