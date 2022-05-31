@@ -35,8 +35,10 @@ xkb_symbols "pc105" {
 
     // Six fake keys for virtual<->real modifiers mapping:
     key <LVL3> {[  ISO_Level3_Shift  ]};
-    key <MDSW> {[  Mode_switch  ]};
-    modifier_map Mod5  { <LVL3>, <MDSW> };
+    modifier_map Mod5  { <LVL3> };
+
+    key <MDSW> {[  ISO_Level5_Shift  ]};
+    modifier_map Mod3  { <MDSW> };
 
     key  <ALT> {[  NoSymbol, Alt_L  ]};
     modifier_map Mod1  { <ALT> };
