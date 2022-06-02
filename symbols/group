@@ -2,8 +2,7 @@
 partial modifier_keys
 xkb_symbols "switch" {
     key <RALT> {
-        symbols[Group1] = [ Mode_switch, Multi_key ],
-        virtualMods= AltGr
+        symbols[Group1] = [ Mode_switch, Multi_key ]
     };
 };
 
@@ -11,8 +10,7 @@ xkb_symbols "switch" {
 partial modifier_keys
 xkb_symbols "lswitch" {
     key <LALT> {
-        symbols[Group1] = [ Mode_switch, Multi_key ],
-        virtualMods= AltGr
+        symbols[Group1] = [ Mode_switch, Multi_key ]
     };
 };
 
@@ -27,8 +25,7 @@ xkb_symbols "win_switch" {
 partial modifier_keys
 xkb_symbols "lwin_switch" {
     key <LWIN> {
-        symbols[Group1] = [ Mode_switch, Multi_key ],
-        virtualMods= AltGr
+        symbols[Group1] = [ Mode_switch, Multi_key ]
     };
 };
 
@@ -36,8 +33,7 @@ xkb_symbols "lwin_switch" {
 partial modifier_keys
 xkb_symbols "rwin_switch" {
     key <RWIN> {
-        symbols[Group1] = [ Mode_switch, Multi_key ],
-        virtualMods= AltGr
+        symbols[Group1] = [ Mode_switch, Multi_key ]
     };
 };
 
@@ -46,8 +42,7 @@ xkb_symbols "rwin_switch" {
 partial modifier_keys
 xkb_symbols "menu_switch" {
     key <MENU> {
-        symbols[Group1] = [ Mode_switch, Menu ],
-        virtualMods= AltGr
+        symbols[Group1] = [ Mode_switch, Menu ]
     };
 };
 
@@ -62,20 +57,16 @@ xkb_symbols "rctrl_switch" {
 // Pressing the right Alt key switches to the next group.
 partial modifier_keys
 xkb_symbols "toggle" {
-    virtual_modifiers AltGr;
     key <RALT> {
-        symbols[Group1] = [ ISO_Next_Group ],
-        virtualMods= AltGr
+        symbols[Group1] = [ ISO_Next_Group ]
     };
 };
 
 // Pressing the left Alt key switches to the next group.
 partial modifier_keys
 xkb_symbols "lalt_toggle" {
-    virtual_modifiers AltGr;
     key <LALT> {
-        symbols[Group1] = [ ISO_Next_Group ],
-        virtualMods= AltGr
+        symbols[Group1] = [ ISO_Next_Group ]
     };
 };
 
@@ -131,17 +122,13 @@ xkb_symbols "ctrl_space_toggle" {
 // pressing the right Win key or the Menu key selects the second group.
 partial modifier_keys
 xkb_symbols "win_menu_switch" {
-    virtual_modifiers AltGr;
     key <LWIN> {
-        virtualMods= AltGr,
         symbols[Group1] = [ ISO_First_Group ]
     };
     key <RWIN> {
-        virtualMods= AltGr,
         symbols[Group1] = [ ISO_Last_Group ]
     };
     key <MENU> {
-        virtualMods= AltGr,
         symbols[Group1] = [ ISO_Last_Group ]
     };
 };
@@ -150,13 +137,10 @@ xkb_symbols "win_menu_switch" {
 // pressing the right Ctrl key selects the second group.
 partial modifier_keys
 xkb_symbols "lctrl_rctrl_switch" {
-    virtual_modifiers AltGr;
     key <LCTL> {
-        virtualMods= AltGr,
         symbols[Group1] = [ ISO_First_Group ]
     };
     key <RCTL> {
-        virtualMods= AltGr,
         symbols[Group1] = [ ISO_Last_Group ]
     };
 };
@@ -210,11 +194,9 @@ xkb_symbols "ctrl_shift_toggle_bidir" {
 //
 partial modifier_keys
 xkb_symbols "lctrl_lalt_toggle" {
-    virtual_modifiers Alt;
     key <LALT> {
         type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ],
-        virtualMods= Alt
+        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
     };
     key <LCTL> {
         type[Group1]="PC_ALT_LEVEL2",
@@ -224,11 +206,9 @@ xkb_symbols "lctrl_lalt_toggle" {
 
 partial modifier_keys
 xkb_symbols "lctrl_lalt_toggle_rev" {
-    virtual_modifiers Alt;
     key <LALT> {
         type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ],
-        virtualMods= Alt
+        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ]
     };
     key <LCTL> {
         type[Group1]="PC_ALT_LEVEL2",
@@ -238,11 +218,9 @@ xkb_symbols "lctrl_lalt_toggle_rev" {
 
 partial modifier_keys
 xkb_symbols "rctrl_ralt_toggle" {
-    virtual_modifiers Alt;
     key <RALT> {
         type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ],
-        virtualMods= Alt
+        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
     };
     key <RCTL> {
         type[Group1]="PC_ALT_LEVEL2",
@@ -268,10 +246,8 @@ xkb_symbols "ctrl_alt_toggle_bidir" {
 //
 partial modifier_keys
 xkb_symbols "lalt_lshift_toggle" {
-    virtual_modifiers Alt;
     key <LALT> {
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ],
-        virtualMods= Alt
+        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
     };
     key <LFSH> {
         type[Group1]="PC_ALT_LEVEL2",
@@ -281,10 +257,8 @@ xkb_symbols "lalt_lshift_toggle" {
 
 partial modifier_keys
 xkb_symbols "lalt_lshift_toggle_rev" {
-    virtual_modifiers Alt;
     key <LALT> {
-        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ],
-        virtualMods= Alt
+        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ]
     };
     key <LFSH> {
         type[Group1]="PC_ALT_LEVEL2",
@@ -294,10 +268,8 @@ xkb_symbols "lalt_lshift_toggle_rev" {
 
 partial modifier_keys
 xkb_symbols "ralt_rshift_toggle" {
-    virtual_modifiers Alt;
     key <RALT> {
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ],
-        virtualMods= Alt
+        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
     };
     key <RTSH> {
         type[Group1]="PC_ALT_LEVEL2",
@@ -328,9 +300,7 @@ xkb_symbols "menu_toggle" {
 // Pressing the left Win key switches to the next group.
 partial modifier_keys
 xkb_symbols "lwin_toggle" {
-    virtual_modifiers AltGr;
     key <LWIN> {
-         virtualMods= AltGr,
         symbols[Group1] = [ ISO_Next_Group ]
     };
 };
@@ -338,9 +308,7 @@ xkb_symbols "lwin_toggle" {
 // Pressing the right Win key switches to the next group.
 partial modifier_keys
 xkb_symbols "rwin_toggle" {
-    virtual_modifiers AltGr;
     key <RWIN> {
-        virtualMods= AltGr,
         symbols[Group1] = [ ISO_Next_Group ]
     };
 };
@@ -390,40 +358,32 @@ xkb_symbols "alt_altgr_toggle" {
 // Pressing the left Shift key switches to the next group.
 partial modifier_keys
 xkb_symbols "lshift_toggle" {
-    virtual_modifiers AltGr;
     key <LFSH> {
-        symbols[Group1] = [ ISO_Next_Group ],
-        virtualMods= AltGr
+        symbols[Group1] = [ ISO_Next_Group ]
     };
 };
 
 // Pressing the right Shift key switches to the next group.
 partial modifier_keys
 xkb_symbols "rshift_toggle" {
-    virtual_modifiers AltGr;
     key <RTSH> {
-        symbols[Group1] = [ ISO_Next_Group ],
-        virtualMods= AltGr
+        symbols[Group1] = [ ISO_Next_Group ]
     };
 };
 
 // Pressing the left Ctrl key switches to the next group.
 partial modifier_keys
 xkb_symbols "lctrl_toggle" {
-    virtual_modifiers AltGr;
     key <LCTL> {
-        symbols[Group1] = [ ISO_Next_Group ],
-        virtualMods= AltGr
+        symbols[Group1] = [ ISO_Next_Group ]
     };
 };
 
 // Pressing the right Ctrl key switches to the next group.
 partial modifier_keys
 xkb_symbols "rctrl_toggle" {
-    virtual_modifiers AltGr;
     key <RCTL> {
-        symbols[Group1] = [ ISO_Next_Group ],
-        virtualMods= AltGr
+        symbols[Group1] = [ ISO_Next_Group ]
     };
 };
 
@@ -445,9 +405,7 @@ xkb_symbols "olpc" {
 // Pressing the Scroll Lock key switches to the next group.
 partial modifier_keys
 xkb_symbols "sclk_toggle" {
-    virtual_modifiers AltGr;
     key <SCLK> {
-        virtualMods= AltGr,
         symbols[Group1] = [ ISO_Next_Group ]
     };
 };
