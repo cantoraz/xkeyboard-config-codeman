@@ -32,7 +32,7 @@ default partial xkb_types "default" {
     };
 
     type "CTRL+ALT" {
-        modifiers = Control+Alt+Shift+LevelThree;
+        modifiers = Shift + LevelThree + Control + Alt;
         map[None] = Level1;
         map[Shift] = Level2;
         map[LevelThree] = Level3;
@@ -55,7 +55,7 @@ default partial xkb_types "default" {
    // FIXME: Should really use RControl but it seems not to be enabled by
    // default and touching this requires a lot of testing.
    type "LOCAL_EIGHT_LEVEL" {
-	modifiers = Shift+Lock+LevelThree+Control;
+	modifiers = Shift + Lock + LevelThree + Control;
 
 	map[None]       = Level1;
 	map[Lock+Shift] = Level1;

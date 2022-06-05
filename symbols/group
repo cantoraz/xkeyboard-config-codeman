@@ -10,13 +10,6 @@ xkb_symbols "lswitch" {
     key <LALT> {[  Mode_switch,  Multi_key  ]};
 };
 
-// Either Win key (while pressed) chooses the next group.
-partial modifier_keys
-xkb_symbols "win_switch" {
-    include "group(lwin_switch)"
-    include "group(rwin_switch)"
-};
-
 // The left Win key (while pressed) chooses the next group.
 partial modifier_keys
 xkb_symbols "lwin_switch" {
@@ -27,6 +20,13 @@ xkb_symbols "lwin_switch" {
 partial modifier_keys
 xkb_symbols "rwin_switch" {
     key <RWIN> {[  Mode_switch,  Multi_key  ]};
+};
+
+// Either Win key (while pressed) chooses the next group.
+partial modifier_keys
+xkb_symbols "win_switch" {
+    include "group(lwin_switch)"
+    include "group(rwin_switch)"
 };
 
 // The Menu key (while pressed) chooses the next group,
@@ -58,29 +58,29 @@ xkb_symbols "lalt_toggle" {
 // (depending on which Shift is pressed first).
 partial modifier_keys
 xkb_symbols "shifts_toggle" {
-    key <LFSH> { [ Shift_L, ISO_Prev_Group ] };
-    key <RTSH> { [ Shift_R, ISO_Next_Group ] };
+    key <LFSH> {[  Shift_L,  ISO_Prev_Group  ]};
+    key <RTSH> {[  Shift_R,  ISO_Next_Group  ]};
 };
 
 // Pressing Shift+Caps_Lock switches to the next group.
 partial modifier_keys
 xkb_symbols "shift_caps_toggle" {
-    key <CAPS> { [ Caps_Lock, ISO_Next_Group ] };
+    key <CAPS> {[  Caps_Lock,  ISO_Next_Group  ]};
 };
 
 // Pressing Caps_Lock selects the first group,
 // pressing Shift+Caps_Lock selects the second group.
 partial modifier_keys
 xkb_symbols "shift_caps_switch" {
-    key <CAPS> { [ ISO_First_Group, ISO_Last_Group ] };
+    key <CAPS> {[  ISO_First_Group,  ISO_Last_Group  ]};
 };
 
 // Pressing Alt+Space switches to the next group.
 partial modifier_keys
 xkb_symbols "alt_space_toggle" {
     key <SPCE> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ space, ISO_Next_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  space,  ISO_Next_Group  ]
     };
 };
 
@@ -89,7 +89,7 @@ partial modifier_keys
 xkb_symbols "win_space_toggle" {
     key <SPCE> {
         type[Group1] = "PC_SUPER_LEVEL2",
-        symbols[Group1] = [ space, ISO_Next_Group ]
+        symbols[Group1] = [  space,  ISO_Next_Group  ]
   };
 };
 
@@ -98,7 +98,7 @@ partial modifier_keys
 xkb_symbols "ctrl_space_toggle" {
     key <SPCE> {
         type[Group1] = "PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ space, ISO_Next_Group ]
+        symbols[Group1] = [  space,  ISO_Next_Group  ]
   };
 };
 
@@ -126,28 +126,28 @@ xkb_symbols "lctrl_rctrl_switch" {
 partial modifier_keys
 xkb_symbols "lctrl_lshift_toggle" {
     key <LFSH> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ Shift_L, ISO_Next_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  Shift_L,  ISO_Next_Group  ]
     };
-    key <LCTL> { [ Control_L, ISO_Next_Group ] };
+    key <LCTL> {[  Control_L,  ISO_Next_Group  ]};
 };
 
 partial modifier_keys
 xkb_symbols "lctrl_lshift_toggle_rev" {
     key <LFSH> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ Shift_L, ISO_Prev_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  Shift_L,  ISO_Prev_Group  ]
     };
-    key <LCTL> { [ Control_L, ISO_Prev_Group ] };
+    key <LCTL> {[  Control_L,  ISO_Prev_Group  ]};
 };
 
 partial modifier_keys
 xkb_symbols "rctrl_rshift_toggle" {
     key <RTSH> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ Shift_R, ISO_Next_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  Shift_R,  ISO_Next_Group  ]
     };
-    key <RCTL> { [ Control_R, ISO_Next_Group ] };
+    key <RCTL> {[  Control_R,  ISO_Next_Group  ]};
 };
 
 partial modifier_keys
@@ -169,36 +169,36 @@ xkb_symbols "ctrl_shift_toggle_bidir" {
 partial modifier_keys
 xkb_symbols "lctrl_lalt_toggle" {
     key <LALT> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  NoSymbol,  ISO_Next_Group  ]
     };
     key <LCTL> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Control_L, ISO_Next_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Control_L,  ISO_Next_Group  ]
     };
 };
 
 partial modifier_keys
 xkb_symbols "lctrl_lalt_toggle_rev" {
     key <LALT> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  NoSymbol,  ISO_Prev_Group  ]
     };
     key <LCTL> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Control_L, ISO_Prev_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Control_L,  ISO_Prev_Group  ]
     };
 };
 
 partial modifier_keys
 xkb_symbols "rctrl_ralt_toggle" {
     key <RALT> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  NoSymbol,  ISO_Next_Group  ]
     };
     key <RCTL> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Control_R, ISO_Next_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Control_R,  ISO_Next_Group  ]
     };
 };
 
@@ -221,33 +221,33 @@ xkb_symbols "ctrl_alt_toggle_bidir" {
 partial modifier_keys
 xkb_symbols "lalt_lshift_toggle" {
     key <LALT> {
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
+        symbols[Group1] = [  NoSymbol,  ISO_Next_Group  ]
     };
     key <LFSH> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Shift_L, ISO_Next_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Shift_L,  ISO_Next_Group  ]
     };
 };
 
 partial modifier_keys
 xkb_symbols "lalt_lshift_toggle_rev" {
     key <LALT> {
-        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ]
+        symbols[Group1] = [  NoSymbol,  ISO_Prev_Group  ]
     };
     key <LFSH> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Shift_L, ISO_Prev_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Shift_L,  ISO_Prev_Group  ]
     };
 };
 
 partial modifier_keys
 xkb_symbols "ralt_rshift_toggle" {
     key <RALT> {
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
+        symbols[Group1] = [  NoSymbol,  ISO_Next_Group  ]
     };
     key <RTSH> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Shift_R, ISO_Next_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Shift_R,  ISO_Next_Group  ]
     };
 };
 
@@ -288,12 +288,12 @@ xkb_symbols "rwin_toggle" {
 partial modifier_keys
 xkb_symbols "ctrls_toggle" {
     key <LCTL> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  NoSymbol,  ISO_Prev_Group  ]
     };
     key <RCTL> {
-        type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
+        type[Group1] = "PC_CONTROL_LEVEL2",
+        symbols[Group1] = [  NoSymbol,  ISO_Next_Group  ]
     };
 };
 
@@ -302,12 +302,12 @@ xkb_symbols "ctrls_toggle" {
 partial modifier_keys
 xkb_symbols "alts_toggle" {
     key <LALT> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Alt_L, ISO_Prev_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Alt_L,  ISO_Prev_Group  ]
     };
     key <RALT> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Alt_R, ISO_Next_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  Alt_R,  ISO_Next_Group  ]
     };
 };
 
@@ -316,12 +316,12 @@ xkb_symbols "alts_toggle" {
 partial modifier_keys
 xkb_symbols "alt_altgr_toggle" {
     key <LALT> {
-        type[Group1]="FOUR_LEVEL",
-        symbols[Group1] = [ Alt_L, Alt_L, ISO_Prev_Group, ISO_Prev_Group ]
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [  Alt_L,  Alt_L,  ISO_Prev_Group,  ISO_Prev_Group  ]
     };
     key <RALT> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ ISO_Level3_Shift, ISO_Next_Group ]
+        type[Group1] = "PC_ALT_LEVEL2",
+        symbols[Group1] = [  ISO_Level3_Shift,  ISO_Next_Group  ]
     };
 };
 
@@ -355,7 +355,7 @@ partial modifier_keys
 xkb_symbols "alt_caps_toggle" {
     key <CAPS> {
        type="PC_ALT_LEVEL2",
-       symbols[Group1] = [ Caps_Lock, ISO_Next_Group ]
+       symbols[Group1] = [  Caps_Lock,  ISO_Next_Group  ]
     };
 };
 
@@ -376,11 +376,11 @@ partial modifier_keys
 xkb_symbols "lctrl_lwin_rctrl_menu" {
     key <LWIN> {
         type[Group1] = "PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ Super_L, ISO_First_Group ]
+        symbols[Group1] = [  Super_L,  ISO_First_Group  ]
     };
     key <MENU> {
         type[Group1] = "PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ Menu, ISO_Last_Group ]
+        symbols[Group1] = [  Menu,  ISO_Last_Group  ]
     };
 };
 

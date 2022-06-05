@@ -2,7 +2,7 @@
 // Shift "pauses" CapsLock.
 partial xkb_types "internal" {
     type "ALPHABETIC" {
-	modifiers = Shift+Lock;
+	modifiers = Shift + Lock;
 	map[Shift] = Level2;
 	preserve[Lock] = Lock;
 	level_name[Level1] = "Base";
@@ -10,7 +10,7 @@ partial xkb_types "internal" {
     };
 
     type "FOUR_LEVEL_ALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	preserve[Lock] = Lock;
@@ -26,7 +26,7 @@ partial xkb_types "internal" {
     };
 
     type "FOUR_LEVEL_SEMIALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	preserve[Lock] = Lock;
@@ -54,7 +54,7 @@ partial xkb_types "internal_nocancel" {
     };
 
     type "FOUR_LEVEL_ALPHABETIC" {
-	modifiers = Shift+LevelThree;
+	modifiers = Shift + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[LevelThree] = Level3;
@@ -67,7 +67,7 @@ partial xkb_types "internal_nocancel" {
 
     type "FOUR_LEVEL_SEMIALPHABETIC" {
         // the same as FOUR_LEVEL_ALPHABETIC
-	modifiers = Shift+LevelThree;
+	modifiers = Shift + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[LevelThree] = Level3;
@@ -83,7 +83,7 @@ partial xkb_types "internal_nocancel" {
 // Shift "pauses" CapsLock.
 partial xkb_types "shift" {
     type "ALPHABETIC" {
-	modifiers = Shift+Lock;
+	modifiers = Shift + Lock;
 	map[Shift] = Level2;
 	map[Lock] = Level2;
 	level_name[Level1] = "Base";
@@ -91,7 +91,7 @@ partial xkb_types "shift" {
     };
 
     type "FOUR_LEVEL_ALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[Lock]  = Level2;
@@ -106,7 +106,7 @@ partial xkb_types "shift" {
     };
 
     type "FOUR_LEVEL_SEMIALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[Lock]  = Level2;
@@ -127,7 +127,7 @@ partial xkb_types "shift" {
 // Shift does not cancel CapsLock.
 partial xkb_types "shift_nocancel" {
     type "ALPHABETIC" {
-	modifiers = Shift+Lock;
+	modifiers = Shift + Lock;
 	map[Shift] = Level2;
 	map[Lock] = Level2;
 	map[Shift+Lock] = Level2;
@@ -136,7 +136,7 @@ partial xkb_types "shift_nocancel" {
     };
 
     type "FOUR_LEVEL_ALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] =  Level1;
 	map[Shift] = Level2;
 	map[Lock] =  Level2;
@@ -152,7 +152,7 @@ partial xkb_types "shift_nocancel" {
     };
 
     type "FOUR_LEVEL_SEMIALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] =  Level1;
 	map[Shift] = Level2;
 	map[Lock] =  Level2;

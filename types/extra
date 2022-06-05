@@ -6,7 +6,7 @@ default partial xkb_types "default" {
     virtual_modifiers LevelThree;
 
     type "FOUR_LEVEL" {
-	modifiers = Shift+LevelThree;
+	modifiers = Shift + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[LevelThree] = Level3;
@@ -18,7 +18,7 @@ default partial xkb_types "default" {
     };
 
     type "FOUR_LEVEL_ALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[Lock]  = Level2;
@@ -33,7 +33,7 @@ default partial xkb_types "default" {
     };
 
     type "FOUR_LEVEL_SEMIALPHABETIC" {
-	modifiers = Shift+Lock+LevelThree;
+	modifiers = Shift + Lock + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[Lock]  = Level2;
@@ -53,7 +53,7 @@ default partial xkb_types "default" {
     // NumLock (with active shifting like in KEYPAD).  LevelThree overrides
     // this mode, with two additional shifted levels.
     type "FOUR_LEVEL_MIXED_KEYPAD" {
-        modifiers = Shift+NumLock+LevelThree;
+        modifiers = Shift + NumLock + LevelThree;
         map[None] = Level1;
         map[Shift+NumLock] = Level1;
         map[NumLock] = Level2;
@@ -70,7 +70,7 @@ default partial xkb_types "default" {
 
     // Base level, two shifted LevelThree levels, one Ctrl+Alt command level.
     type "FOUR_LEVEL_X" {
-        modifiers = Shift+LevelThree+Control+Alt;
+        modifiers = Shift + LevelThree + Control + Alt;
         map[None] = Level1;
         map[LevelThree] = Level2;
         map[Shift+LevelThree] = Level3;
@@ -86,7 +86,7 @@ default partial xkb_types "default" {
     // present in Unicode that are made up of two separate letters
     // (forms like LJ, Lj, and lj; NJ, Nj, and nj; etcetera).
     type "SEPARATE_CAPS_AND_SHIFT_ALPHABETIC" {
-        modifiers = Shift+Lock+LevelThree;
+        modifiers = Shift + Lock + LevelThree;
         map[None] = Level1;
         map[Shift] = Level2;
         map[Lock] = Level4;
@@ -106,7 +106,7 @@ default partial xkb_types "default" {
     // plus a fifth level when CapsLock (and only CapsLock) is active
     // -- CapsLock is ignored when Shift and/or LevelThree is held.
     type "FOUR_LEVEL_PLUS_LOCK" {
-        modifiers = Shift+Lock+LevelThree;
+        modifiers = Shift + Lock + LevelThree;
         map[None] = Level1;
         map[Shift] = Level2;
         map[LevelThree] = Level3;
@@ -125,10 +125,11 @@ default partial xkb_types "default" {
 
 // This enables the four-level shifting also for the keypad.
 partial xkb_types "keypad" {
+
     virtual_modifiers LevelThree;
 
     type "FOUR_LEVEL_KEYPAD" {
-	modifiers = Shift+NumLock+LevelThree;
+	modifiers = Shift + NumLock + LevelThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[NumLock] = Level2;

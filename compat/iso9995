@@ -62,6 +62,7 @@ default partial xkb_compatibility "default" {
 	virtualModifier= AltGr;
 	action= LockGroup(group=-1);
     };
+
     interpret ISO_First_Group {
 	action= LockGroup(group=1);
     };
