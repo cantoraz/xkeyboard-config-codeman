@@ -16,15 +16,15 @@ xkb_symbols "pc105" {
     key <SPCE> {[  space  ]};
 
     key <LFSH> {[  Shift_L    ]};
-    key <LCTL> {[  Control_L  ]};
-    key <LALT> {[  Alt_L,  Meta_L  ]};
-    key <LWIN> {[  Super_L    ]};
-
     key <RTSH> {[  Shift_R    ]};
+    key <LCTL> {[  Control_L  ]};
     key <RCTL> {[  Control_R  ]};
+    key <LALT> {[  Alt_L,  Meta_L  ]};
     key <RALT> {[  Alt_R,  Meta_R  ]};
+    key <LWIN> {[  Super_L    ]};
     key <RWIN> {[  Super_R    ]};
-    key <MENU> {[  Menu       ]};
+
+    key <MENU> {[  Menu  ]};
 
     modifier_map Shift   { Shift_L, Shift_R };
     modifier_map Lock    { Caps_Lock };
@@ -38,7 +38,7 @@ xkb_symbols "pc105" {
     key <MDSW> {[  Mode_switch  ]};
     modifier_map Mod5  { <LVL3>, <MDSW> };
 
-    key <ALT>  {[  NoSymbol, Alt_L  ]};
+    key  <ALT> {[  NoSymbol, Alt_L  ]};
     modifier_map Mod1  { <ALT> };
 
     key <META> {[  NoSymbol, Meta_L  ]};
