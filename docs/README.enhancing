@@ -435,26 +435,26 @@ xkb interpret the following lines (rules). A sample rules file looks like
 this:
 
      ! model                   =   keycodes
-       macintosh_old                     =   macintosh
+       macintosh_old           =   macintosh
        ...
        *                       =   xfree86
 
-     ! model                        =   symbols
+     ! model                   =   symbols
        hp                      =   +inet(%m)
-       microsoftpro                 =   +inet(%m)
-       geniuscomfy                  =   +inet(%m)
+       microsoftpro            =   +inet(%m)
+       geniuscomfy             =   +inet(%m)
 
-     ! model       layout[1]          = symbols
-       macintosh    us           = macintosh/us%(v[1])
-       *             *               =       pc/pc(%m)+pc/%l[1]%(v[1])
+     ! model       layout[1]   =   symbols
+       macintosh   us          =   macintosh/us%(v[1])
+       *           *           =   pc/pc(%m)+pc/%l[1]%(v[1])
 
-     ! model     layout[2]            = symbols
-       macintosh     us              =  +macintosh/us[2]%(v[2]):2
-       *       *               =   +pc/%l[2]%(v[2]):2
+     ! model       layout[2]   =   symbols
+       macintosh   us          =   +macintosh/us[2]%(v[2]):2
+       *           *           =   +pc/%l[2]%(v[2]):2
 
-     ! option            =    types
-       caps:internal               =    +caps(internal)
-       caps:internal_nocancel =    +caps(internal_nocancel)
+     ! option                  =   types
+       caps:internal           =   +caps(internal)
+       caps:internal_nocancel  =   +caps(internal_nocancel)
 
 Each rule defines what certain combination of values on the left side of
 equal sign ('=') results in. For example a (keyboard) model macintosh_old
@@ -504,7 +504,7 @@ rules file described above the .lst file could look like:
        pc104        Generic 104-key PC
        microsoft    Microsoft Natural
        pc98         PC-98xx Series
-       macintosh     Original Macintosh
+       macintosh    Original Macintosh
        ...
 
      ! layout
@@ -515,6 +515,6 @@ rules file described above the .lst file could look like:
 
      ! option
        caps:internal           uses internal capitalization. Shift cancels Caps
-       caps:internal_nocancel uses internal capitalization. Shift doesn't cancel Caps
+       caps:internal_nocancel  uses internal capitalization. Shift doesn't cancel Caps
 
 And that should be it. Enjoy creating your own xkb mapping.
