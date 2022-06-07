@@ -190,7 +190,8 @@ default xkb_keycodes "evdev" {
 
 	// Fake keycodes for virtual keys
 	<LVL3> =   92;
-	<MDSW> =   203;
+	<LVL5> =   203;
+	alias <MDSW> = <LVL5>;
 	<ALT>  =   204;
 	<META> =   205;
 	<SUPR> =   206;

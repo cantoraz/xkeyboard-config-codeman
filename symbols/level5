@@ -54,11 +54,11 @@ xkb_symbols "menu_switch" {
 // Ensure a mapping to a real modifier for LevelFive.
 partial modifier_keys
 xkb_symbols "modifier_mapping" {
-  replace key <MDSW> {
+  replace key <LVL5> {
     type[Group1] = "ONE_LEVEL",
     symbols[Group1] = [ ISO_Level5_Shift ]
   };
-  modifier_map Mod3 { <MDSW> };
+  modifier_map Mod3 { <LVL5> };
 };
 
 // This adds the definitions needed to create a level5-locking behaviour,
