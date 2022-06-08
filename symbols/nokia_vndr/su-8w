@@ -374,11 +374,11 @@ xkb_symbols "us" {
 partial alphanumeric_keys
 xkb_symbols "us_nodeadkeys" {
 
-    include "nokia_vndr/su-8w(us_intl)"
+    include "nokia_vndr/su-8w(us)"
 
     name[Group1] = "U.S. English (international, no dead keys)";
 
-    key <AC10> { [ apostrophe,    quotedbl,       dead_acute,           dead_diaeresis ] };
+    key <AC11> { [ apostrophe,    quotedbl,       dead_acute,           dead_diaeresis ] };
 };
 
 
