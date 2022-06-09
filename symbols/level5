@@ -8,7 +8,6 @@ xkb_symbols "rctrl_switch" {
     type[Group1]="ONE_LEVEL",
     symbols[Group1] = [ ISO_Level5_Shift ]
   };
-  include "level5(modifier_mapping)"
 };
 
 // The Less/Greater key (while pressed) chooses the fifth shift level.
@@ -18,7 +17,6 @@ xkb_symbols "lsgt_switch" {
     type[Group1]="ONE_LEVEL",
     symbols[Group1] = [ ISO_Level5_Shift ]
   };
-  include "level5(modifier_mapping)"
 };
 
 // The right Alt key (while pressed) chooses the fifth shift level.
@@ -28,7 +26,6 @@ xkb_symbols "ralt_switch" {
     type[Group1]="ONE_LEVEL",
     symbols[Group1] = [ ISO_Level5_Shift ]
   };
-  include "level5(modifier_mapping)"
 };
 
 // The CapsLock key (while pressed) chooses the fifth shift level.
@@ -38,7 +35,6 @@ xkb_symbols "caps_switch" {
     type[Group1]="ONE_LEVEL",
     symbols[Group1] = [ ISO_Level5_Shift ]
   };
-  include "level5(modifier_mapping)"
 };
 
 // The Menu key (while pressed) chooses the fifth shift level.
@@ -48,17 +44,6 @@ xkb_symbols "menu_switch" {
     type[Group1]="ONE_LEVEL",
     symbols[Group1] = [ ISO_Level5_Shift ]
   };
-  include "level5(modifier_mapping)"
-};
-
-// Ensure a mapping to a real modifier for LevelFive.
-partial modifier_keys
-xkb_symbols "modifier_mapping" {
-  replace key <LVL5> {
-    type[Group1] = "ONE_LEVEL",
-    symbols[Group1] = [ ISO_Level5_Shift ]
-  };
-  modifier_map Mod3 { <LVL5> };
 };
 
 // This adds the definitions needed to create a level5-locking behaviour,
@@ -73,7 +58,6 @@ xkb_symbols "lock" {
     actions[Group1] = [ SetMods(modifiers=NumLock) ]
   };
   modifier_map Mod2 { <HYPR> };
-  include "level5(modifier_mapping)"
 };
 
 // The following modifier keys are used to switch to the third shift level

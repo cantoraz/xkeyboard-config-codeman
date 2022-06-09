@@ -181,8 +181,6 @@ xkb_symbols "e1" {
     key <LSGT> { [            less,    greater,                  bar, NoSymbol,        lessthanequal,     greaterthanequal, NoSymbol, NoSymbol ] };
 
     include "kpdl(comma)"
-    include "level3(modifier_mapping)"
-    include "level5(modifier_mapping)"
  };
 
 partial alphanumeric_keys
@@ -278,8 +276,6 @@ xkb_symbols "T3" {
 
     include "kpdl(comma)"
 
-    include "level5(modifier_mapping)"
-    include "level3(modifier_mapping)"
     key.type[Group1] = "THREE_LEVEL";
     key <LFSH> { [ Shift_L, Shift_L, ISO_Level5_Latch ] };
     key <RTSH> { [ Shift_R, Shift_R, ISO_Level5_Latch ] };
