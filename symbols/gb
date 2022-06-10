@@ -106,7 +106,7 @@ xkb_symbols "colemak" {
 
     name[Group1]="English (UK, Colemak)";
 
-    key <TLDE>	{ [     grave,    notsign,          bar,          bar ]	};
+    key <TLDE>	{ [     grave,    notsign,          bar,   asciitilde ]	};
     key <AE02>	{ [         2,   quotedbl,  twosuperior,    oneeighth ]	};
     key <AE03>	{ [         3,   sterling, threesuperior,    sterling ]	};
     key <AE04>	{ [         4,     dollar,     EuroSign,   onequarter ]	};
@@ -114,7 +114,7 @@ xkb_symbols "colemak" {
     key <AC11>	{ [apostrophe,         at, dead_circumflex, dead_caron]	};
     key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
 
-    key <LSGT>	{ [ backslash,        bar,          bar,    brokenbar ]	};
+    key <LSGT>	{ [ backslash,        bar,   asciitilde,    brokenbar ]	};
 
     include "level3(ralt_switch)"
 };
@@ -127,7 +127,7 @@ xkb_symbols "colemak_dh" {
 
     name[Group1]="English (UK, Colemak-DH)";
 
-    key <TLDE>	{ [     grave,    notsign,          bar,          bar ]	};
+    key <TLDE>	{ [     grave,    notsign,          bar,   asciitilde ]	};
     key <AE02>	{ [         2,   quotedbl,  twosuperior,    oneeighth ]	};
     key <AE03>	{ [         3,   sterling, threesuperior,    sterling ]	};
     key <AE04>	{ [         4,     dollar,     EuroSign,   onequarter ]	};
@@ -135,7 +135,7 @@ xkb_symbols "colemak_dh" {
     key <AC11>	{ [apostrophe,         at, dead_circumflex, dead_caron]	};
     key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
 
-    key <AB05>	{ [ backslash,        bar,          bar,    brokenbar ]	};
+    key <AB05>	{ [ backslash,        bar,   asciitilde,    brokenbar ]	};
 
     include "level3(ralt_switch)"
 };
