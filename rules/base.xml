@@ -6803,14 +6803,20 @@
        </variant>
        <variant>
          <configItem>
-          <name>phonetic</name>
-            <description>Indonesian (Arab Pegon, phonetic)</description>
+          <name>melayu-phonetic</name>
+            <description>Indonesian (Arab Melayu, phonetic)</description>
          </configItem>
        </variant>
        <variant>
          <configItem>
-          <name>phoneticx</name>
-            <description>Indonesian (Arab Pegon, extended phonetic)</description>
+          <name>melayu-phoneticx</name>
+            <description>Indonesian (Arab Melayu, extended phonetic)</description>
+         </configItem>
+       </variant>
+       <variant>
+         <configItem>
+          <name>pegon-phonetic</name>
+            <description>Indonesian (Arab Pegon, phonetic)</description>
          </configItem>
        </variant>
       </variantList>
