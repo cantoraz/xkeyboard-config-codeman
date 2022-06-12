@@ -240,102 +240,106 @@ the proper xkb component's subdirectory.
 The most used schemes are:
 
       ONE_LEVEL
-            The key does not depend on any modifiers. The symbol from first
-            level is always chosen.
+            The key does not depend on any modifiers. The symbol from the
+            first level is always chosen.
 
       TWO_LEVEL
             The key uses the modifier Shift and may have two possible values.
-            The second level may be chosen by Shift modifier. If Lock modi-
-            fier (usually Caps-lock) applies the symbol is further processed
-            using system-specific capitalization rules. If both Shift+Lock
-            modifier apply the symbol from the second level is taken and cap-
-            italization rules are applied (and usually have no effect).
+            The second level is chosen by the Shift modifier. If the Lock
+            modifier (usually Caps-lock) applies, the symbol is further
+            processed using system-specific capitalization rules. If both
+            the Shift and Lock modifiers apply, the symbol from the second
+            level is taken and capitalization rules are applied (but usually
+            have no effect).
 
       ALPHABETIC
-            The key uses modifiers Shift and Lock. It may have two possible
-            values. The second level may be chosen by Shift modifier. When
+            The key uses the modifiers Shift and Lock. It may have two
+            possible values. The second level is chosen by Shift. When the
             Lock modifier applies, the symbol from the first level is taken
             and further processed using system-specific capitalization rules.
-            If both Shift+Lock modifier apply the symbol from the first level
-            is taken and no capitalization rules applied. This is often
-            called shift-cancels-caps behaviour.
+            If both the Shift and Lock modifiers apply, the symbol from the
+            first level is taken and no capitalization rules are applied.
+            This is often called shift-cancels-caps behaviour.
 
       THREE_LEVEL
-            Is the same as TWO_LEVEL but it considers an extra modifier -
-            LevelThree which can be used to gain the symbol value from the
-            third level. If both Shift+LevelThree modifiers apply the value
-            from the third level is also taken. As in TWO_LEVEL, the Lock
-            modifier doesn't influence the resulting level. Only Shift and
-            LevelThree are taken into that consideration. If the Lock modi-
-            fier is active capitalization rules are applied on the resulting
+            Is the same as TWO_LEVEL but it considers an extra modifier:
+            LevelThree, which can be used to gain the symbol value from the
+            third level. If both the Shift and LevelThree modifiers apply,
+            the value from the third level is taken. As in TWO_LEVEL, the
+            Lock modifier doesn't influence the resulting level - only Shift
+            and LevelThree are taken into consideration. If the Lock modifier
+            is active, capitalization rules are applied to the resulting
             symbol.
 
       FOUR_LEVEL
-            Is the same as THREE_LEVEL but unlike LEVEL_THREE if both
-            Shift+LevelThree modifiers apply the symbol is taken from the
-            fourth level.
+            Is the same as THREE_LEVEL but, unlike THREE_LEVEL, if both the
+            Shift and LevelThree modifiers apply, the symbol is taken from
+            the fourth level.
 
       FOUR_LEVEL_ALPHABETIC
             Is similar to FOUR_LEVEL but also defines shift-cancels-caps
-            behaviour as in ALPHABETIC. If Lock+LevelThree apply the symbol
-            from the third level is taken and the capitalization rules are
-            applied.  If Lock+Shift+LevelThree apply the symbol from the
-            third level is taken and no capitalization rules are applied.
+            behaviour as in ALPHABETIC. If both Lock and LevelThree apply,
+            the symbol from the third level is taken and the capitalization
+            rules are applied. If all three modifiers (Lock and Shift and
+            LevelThree) apply, the symbol from the third level is taken and
+            no capitalization rules are applied
 
       KEYPAD
-            As the name suggest this scheme is primarily used for numeric
-            keypads.  The scheme considers two modifiers - Shift and NumLock.
-            If none of modifiers applies the symbol from the first level is
-            taken. If either Shift or NumLock modifiers apply the symbol from
-            the second level is taken.  If both Shift+NumLock modifiers apply
-            the symbol from the first level is taken. Again, shift-cancels-
-            caps variant.
+            As the name suggest, this scheme is primarily used for numeric
+            keypads. The scheme considers two modifiers: Shift and NumLock.
+            If none of the modifiers applies, the symbol from the first level
+            is taken. If either the Shift or the NumLock modifier apply, the
+            symbol from the second level is taken. If both the Shift and the
+            NumLock modifier apply, the symbol from the first level is taken.
+            Again, a shift-cancels-caps variant.
 
       FOUR_LEVEL_KEYPAD
-            Is similar to KEYPAD scheme but considers also LevelThree modi-
-            fier.  If LevelThree modifier applies the symbol from the third
-            level is taken.  If Shift+LevelThree or NumLock+LevelThree apply
-            the symbol from the fourth level is taken. If all Shift+Num-
-            Lock+LevelThree modifiers apply the symbol from the third level
-            is taken. This also, shift-cancels-caps variant.
+            Is similar to the KEYPAD scheme but considers also the LevelThree
+            modifier. If the LevelThree modifier applies, the symbol from the
+            third level is taken. If both Shift and LevelThree or NumLock and
+            LevelThree apply, the symbol from the fourth level is taken. If
+            all three (Shift+NumLock+LevelThree) apply, the symbol from the
+            third level is taken. This also is a shift-cancels-caps variant.
 
       FOUR_LEVEL_MIXED_KEYPAD
-	    A four-level keypad scheme where the first two levels are similar
-            to the KEYPAD scheme (NumLock+Shift).
-            LevelThree acts as an override providing access to two Shift-ed
-            levels. When LevelThree is active we totally ignore NumLock state.
+            A four-level keypad scheme where the first two levels behave like
+            the KEYPAD scheme (with Shift and NumLock). The LevelThree modifier
+            acts as an override, providing access to two normally Shift-ed
+            levels: when LevelThree is active we ignore the NumLock state.
             Intended for the digit area of the keypad.
 
       FOUR_LEVEL_X
             A four-level scheme where the base level accepts no modifier,
-            LevelThree provides two more Shift-ed levels like in the previous
-            scheme, and Ctrl+Alt controls the fourth level.
-            Intended for the operator part of a keypad, though since NumLock
-            plays no part, it is not keypad-specific.
+            LevelThree provides two more Shift-ed levels (levels 2 and 3),
+            and Ctrl plus Alt command the fourth level. Intended for the
+            operator part of a keypad, though since NumLock plays no part,
+            it is not keypad-specific.
 
-Besides that, there are several schemes for special purposes:
+Besides that, there are some schemes for special purposes:
 
       PC_CONTROL_LEVEL2
-            It is similar to TWO_LEVEL scheme but it considers the Control
+            Similar to the TWO_LEVEL scheme but it considers the Control
             modifier rather than Shift. That means, the symbol from the
             second level is chosen by Control rather than by Shift.
 
       PC_ALT_LEVEL2
-            It is similar to the TWO_LEVEL scheme but it considers the Alt
-            modifier rather than Shift. That means, the symbol from the
-            second level is chosen by Alt rather than by Shift.
+            Similar to the TWO_LEVEL scheme but it considers the Alt
+            modifier rather than Shift. That means, the symbol from
+            the second level is chosen by Alt rather than by Shift.
 
       CTRL+ALT
-            The key uses modifiers Alt and Control. It may have two possible
-            values. If only one modifier (Alt or Control) applies the symbol
-            from the first level is chosen. Only if both Alt+Control modi-
-            fiers apply the symbol from the second level is chosen.
+            The key uses the modifiers Alt and Control. It may have two
+            possible values. If just one modifier (Alt or Control) applies,
+            the symbol from the first level is chosen. Only if both the Alt
+            and Control modifiers apply, the symbol from the second level
+            is chosen.
 
       SHIFT+ALT
-            The key uses modifiers Shift and Alt. It may have two possible
-            values.  If only one modifier (Alt or Shift) applies the symbol
-            from the first level is chosen. Only if both Alt+Shift modifiers
-            apply the symbol from the second level is chosen.
+            The key uses the modifiers Shift and Alt. It may have two
+            possible values. If just one modifier (Alt or Shift) applies,
+            the symbol from the first level is chosen. Only if both the
+            Alt and Shift modifiers apply, the symbol from the second
+            level is chosen.
 
 If needed, special caps schemes may be used. They redefine the standard
 behaviour of all *ALPHABETIC types. The layouts (maps of symbols) with keys
