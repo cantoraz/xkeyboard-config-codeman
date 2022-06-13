@@ -1,33 +1,10 @@
-// Uzbek standard keyboard
-//
-// Mashrab Kuvatov <kmashrab@uni-bremen.de>
-//
-// History:
-//
-// Jun 2, 2003. Mashrab Kuvatov <kmashrab@uni-bremen.de>
-//
-// Created based on the Russian standard keyboard. AEN <aen@logic.ru>
-// The following symbols of the Russian standard keyboard were replaced:
-// minus (key <AE11>) with Byelorussian_shortu (U045e),
-// equal (key <AE12>) with Cyrillic_ka_descender (U049b),
-// Cyrillic_ha (key <AD11>) with Cyrillic_ghe_bar (U0493),
-// Cyrillic_hardsign (key <AD12>) with Cyrillic_ha_descender (U04b3).
-// The following symbols of the Russian standard keyboard were moved:
-// Cyrillic_ze       to key <AC02> (English 's'),
-// Cyrillic_sha      to key <AD08> (English 'i'),
-// Cyrillic_ha       to key <AD09> (English 'o'),
-// Cyrillic_hardsign to key <AD10> (English 'p').
-//
-// Feb 25, 2007. Mashrab Kuvatov <kmashrab@uni-bremen.de>
-//
-// Made cyrillic and latin variants. Default is cyrillic.
-// Cyrillic variant is standard compliant. The standard
-// was accepted by the official body of Uzbekistan. See
+// Keyboard layouts for Uzbekistan.
+
+// The Cyrillic variant is standard compliant.
+// The standard was accepted by the official body of Uzbekistan.
 // http://www.uznet.net/index.php?option=com_content&task=view&id=288&Itemid=58
 //
-// Latin variant is somewhat experimental, since there is no
-// official standard for it. It is a copy of "us" layout, where
-// apostrophe is replaced with U02BB.
+// February 2007, Mashrab Kuvatov <kmashrab@uni-bremen.de>
 
 default partial alphanumeric_keys
 xkb_symbols "cyrillic" {
@@ -53,6 +30,7 @@ xkb_symbols "cyrillic" {
     key	<AE11> {	[Cyrillic_ghe_bar, Cyrillic_GHE_bar	]	};
     key	<AE12> {	[Cyrillic_ha_descender, Cyrillic_HA_descender ]	};
     key	<TLDE> {	[     Cyrillic_io,     Cyrillic_IO	]	};
+
     key	<AD01> {	[ Cyrillic_shorti, Cyrillic_SHORTI	]	};
     key	<AD02> {	[    Cyrillic_tse,    Cyrillic_TSE	]	};
     key	<AD03> {	[      Cyrillic_u,      Cyrillic_U	]	};
@@ -65,6 +43,7 @@ xkb_symbols "cyrillic" {
     key	<AD10> {	[     Cyrillic_ze,     Cyrillic_ZE	]	};
     key	<AD11> {	[     Cyrillic_ha,     Cyrillic_HA	]	};
     key	<AD12> {	[Cyrillic_hardsign, Cyrillic_HARDSIGN ]	};
+
     key	<AC01> {	[     Cyrillic_ef,     Cyrillic_EF	]	};
     key	<AC02> {	[Cyrillic_ka_descender, Cyrillic_KA_descender ]	};
     key	<AC03> {	[     Cyrillic_ve,     Cyrillic_VE	]	};
@@ -76,6 +55,7 @@ xkb_symbols "cyrillic" {
     key	<AC09> {	[     Cyrillic_de,     Cyrillic_DE	]	};
     key	<AC10> {	[    Cyrillic_zhe,    Cyrillic_ZHE	]	};
     key	<AC11> {	[      Cyrillic_e,      Cyrillic_E	]	};
+
     key	<AB01> {	[     Cyrillic_ya,     Cyrillic_YA	]	};
     key	<AB02> {	[    Cyrillic_che,    Cyrillic_CHE	]	};
     key	<AB03> {	[     Cyrillic_es,     Cyrillic_ES	]	};
@@ -87,9 +67,11 @@ xkb_symbols "cyrillic" {
     key	<AB09> {	[     Cyrillic_yu,     Cyrillic_YU	]	};
 };
 
+// The Latin variant is experimental, as there is no official standard for it.
+
 partial alphanumeric_keys
 xkb_symbols "latin" {
     include "us"
     name[Group1]= "Uzbek (Latin)";
-    key <AC11>  { [0x010002BB, quotedbl] };
+    key <AC11>  {[ U02BB, quotedbl ]};
 };
