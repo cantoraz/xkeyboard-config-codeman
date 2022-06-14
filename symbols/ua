@@ -386,7 +386,7 @@ xkb_symbols "crh_f" {
     key <TLDE>  { [      plus,   asterisk,       backslash,       plusminus ] };
     key <AE11>  { [         x,          X,           slash,        question ] };
 
-    key <AD04>  { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC",
+    key <AD04>  { type[group1] = "FOUR_LEVEL_ALPHABETIC",
                   [  idotless,          I,          iacute,          Iacute ] };
 
     key <AC07>  { [         k,          K,          ibreve,          Ibreve ] };
