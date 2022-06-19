@@ -11,6 +11,9 @@ xkb_symbols "usmac" {
     name[Group1]	= "Japan - Macintosh, US map";
     include "jp(common)"
 
+    key <HNGL> {[ Eisu_toggle ]};
+    key <HJCV> {[ Hiragana_Katakana ]};
+
     key <JPCM> { [ KP_Separator ] };
     key <AE13> { [ yen, bar 	] };
     replace key <AE10> { [ 0		] };
