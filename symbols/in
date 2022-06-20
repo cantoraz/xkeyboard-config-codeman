@@ -1100,7 +1100,7 @@ xkb_symbols "tam" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "tam_tamilnet" {
+xkb_symbols "tamilnet" {
 
     // Description: A keymap based on the TamilNet'99 typewriter keyboard
     // Encoding: Unicode (http://www.unicode.org)
@@ -1163,9 +1163,9 @@ xkb_symbols "tam_tamilnet" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "tam_tamilnet_with_tam_nums" {
+xkb_symbols "tamilnet_tamilnumbers" {
 
-    include "in(tam_tamilnet)"
+    include "in(tamilnet)"
 
     name[Group1]= "Tamil (TamilNet '99 with Tamil numerals)";
 
@@ -1182,7 +1182,7 @@ xkb_symbols "tam_tamilnet_with_tam_nums" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "tam_tamilnet_TSCII" {
+xkb_symbols "tamilnet_TSCII" {
 
     // Description	: A Tamil typewrite-style keymap
     //		  loosely based on TamilNet'99 reommendations
@@ -1238,7 +1238,7 @@ xkb_symbols "tam_tamilnet_TSCII" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "tam_tamilnet_TAB" {
+xkb_symbols "tamilnet_TAB" {
 
     // Description: A keymap based on the TamilNet'99 typewriter keyboard
     // Encoding: TAB (http://www.tamilnet99.org)

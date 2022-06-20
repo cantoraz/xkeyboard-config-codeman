@@ -2230,7 +2230,7 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet</name>
+            <name>tamilnet</name>
             <!-- Keyboard indicator for Tamil layouts -->
             <shortDescription>ta</shortDescription>
             <description>Tamil (TamilNet '99)</description>
@@ -2241,7 +2241,7 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet_with_tam_nums</name>
+            <name>tamilnet_tamilnumbers</name>
             <!-- Keyboard indicator for Tamil layouts -->
             <shortDescription>ta</shortDescription>
             <description>Tamil (TamilNet '99 with Tamil numerals)</description>
@@ -2252,7 +2252,7 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet_TAB</name>
+            <name>tamilnet_TAB</name>
             <!-- Keyboard indicator for Tamil layouts -->
             <shortDescription>ta</shortDescription>
             <description>Tamil (TamilNet '99, TAB encoding)</description>
@@ -2263,7 +2263,7 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet_TSCII</name>
+            <name>tamilnet_TSCII</name>
             <!-- Keyboard indicator for Tamil layouts -->
             <shortDescription>ta</shortDescription>
             <description>Tamil (TamilNet '99, TSCII encoding)</description>
