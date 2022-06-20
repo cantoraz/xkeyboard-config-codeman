@@ -1049,7 +1049,7 @@ xkb_symbols "tam" {
     key <AE01>	{[  U0BE7          ]};
     key <AE02>	{[  U0BE8          ]};
     key <AE03>	{[  U0BE9          ]};
-    key <AE04>	{[  U0BEA          ]};
+    key <AE04>	{[  U0BEA,  U20B9  ]}; // Rupee
     key <AE05>	{[  U0BEB          ]};
     key <AE06>	{[  U0BEC          ]};
     key <AE07>	{[  U0BED          ]};
@@ -1097,9 +1097,6 @@ xkb_symbols "tam" {
     key <AB08>	{[  comma,  U0BB7  ]};
     key <AB09>	{[ period,  U0964  ]};
     key <AB10>	{[  U0BAF, question]};
-
-    include "rupeesign(4)"
-    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
