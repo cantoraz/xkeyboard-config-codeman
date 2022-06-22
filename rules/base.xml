@@ -2277,7 +2277,18 @@
             <name>tam</name>
             <!-- Keyboard indicator for Tamil layouts -->
             <shortDescription>ta</shortDescription>
-            <description>Tamil (InScript)</description>
+            <description>Tamil (InScript, with Arabic numerals)</description>
+            <languageList>
+              <iso639Id>tam</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>tam_tamilnumbers</name>
+            <!-- Keyboard indicator for Tamil layouts -->
+            <shortDescription>ta</shortDescription>
+            <description>Tamil (InScript, with Tamil numerals)</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
