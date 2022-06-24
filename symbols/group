@@ -65,14 +65,20 @@ xkb_symbols "shifts_toggle" {
 // Pressing Shift+Caps_Lock switches to the next group.
 partial modifier_keys
 xkb_symbols "shift_caps_toggle" {
-    key <CAPS> {[  Caps_Lock,  ISO_Next_Group  ]};
+    key <CAPS> {
+        type[group1] = "TWO_LEVEL",
+        [  Caps_Lock,  ISO_Next_Group  ]
+    };
 };
 
 // Pressing Caps_Lock selects the first group,
 // pressing Shift+Caps_Lock selects the second group.
 partial modifier_keys
 xkb_symbols "shift_caps_switch" {
-    key <CAPS> {[  ISO_First_Group,  ISO_Last_Group  ]};
+    key <CAPS> {
+        type[group1] = "TWO_LEVEL",
+        [  ISO_First_Group,  ISO_Last_Group  ]
+    };
 };
 
 // Pressing Alt+Space switches to the next group.
@@ -354,8 +360,8 @@ xkb_symbols "rctrl_toggle" {
 partial modifier_keys
 xkb_symbols "alt_caps_toggle" {
     key <CAPS> {
-       type="PC_ALT_LEVEL2",
-       symbols[Group1] = [  Caps_Lock,  ISO_Next_Group  ]
+        type[group1] = "PC_ALT_LEVEL2",
+        [  Caps_Lock,  ISO_Next_Group  ]
     };
 };
 

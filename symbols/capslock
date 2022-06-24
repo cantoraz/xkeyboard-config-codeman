@@ -12,7 +12,10 @@ xkb_symbols "shiftlock" {
 
 hidden partial modifier_keys
 xkb_symbols "grouplock" {
-    replace key <CAPS> { [ ISO_Next_Group, Caps_Lock ] };
+    key <CAPS> {
+        type[Group1] = "TWO_LEVEL",
+        [ ISO_Next_Group, Caps_Lock ]
+    };
 };
 
 hidden partial modifier_keys
