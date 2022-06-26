@@ -288,8 +288,6 @@ xkb_symbols "tt" {
     include "ru(winkeys)"
     name[Group1]= "Tatar";
 
-    key.type[group1]="FOUR_LEVEL";
-
     key <TLDE> { [           Cyrillic_shha,           Cyrillic_SHHA,        Cyrillic_io,        Cyrillic_IO  ] };
     key <AD02> { [          Cyrillic_o_bar,          Cyrillic_O_bar,       Cyrillic_tse,       Cyrillic_TSE  ] };
     key <AD09> { [          Cyrillic_schwa,          Cyrillic_SCHWA,     Cyrillic_shcha,     Cyrillic_SHCHA  ] };
@@ -328,8 +326,6 @@ xkb_symbols "cv" {
     include "ru(winkeys)"
     name[Group1]= "Chuvash";
 
-    key.type[group1]="FOUR_LEVEL";
-
     key <AD03> { [   Cyrillic_u,   Cyrillic_U,  0x010004f3,  0x010004f2 ] };
     key <AD05> { [  Cyrillic_ie,  Cyrillic_IE,  0x010004d7,  0x010004d6 ] };
     key <AC04> { [   Cyrillic_a,   Cyrillic_A,  0x010004d1,  0x010004d0 ] };
@@ -343,8 +339,6 @@ xkb_symbols "udm" {
 
     include "ru(winkeys)"
     name[Group1]= "Udmurt";
-
-    key.type[group1]="FOUR_LEVEL";
 
     key <AE01> { [    question,      exclam,   1,   1  ] };
     key <AE02> { [   parenleft,    quotedbl,   2,   2  ] };
@@ -365,8 +359,6 @@ xkb_symbols "cv_latin" {
 
     include "us(alt-intl)"
     name[Group1]= "Chuvash (Latin)";
-
-    key.type[group1]="FOUR_LEVEL";
 
     key <AD01> { [   q,   Q,   0x01000161,   0x01000160  ] };
     key <AD02> { [   w,   W,   udiaeresis,   Udiaeresis  ] };
@@ -392,8 +384,6 @@ xkb_symbols "kom" {
     include "ru(winkeys)"
     name[Group1]= "Komi";
 
-    key.type[group1]="FOUR_LEVEL_ALPHABETIC";
-
     // cyrilllic o with diaeresis
     key <AC07> { [  Cyrillic_o,  Cyrillic_O,        U04E7,        U04E6  ] };
 
@@ -412,8 +402,6 @@ xkb_symbols "sah" {
 
     include "ru(winkeys)"
     name[Group1]= "Yakut";
-
-    key.type[group1]="FOUR_LEVEL_ALPHABETIC";
 
     key <TLDE> { [  Cyrillic_io,      Cyrillic_IO,      U04EB,                U04EA                ] };
     key <AD01> { [  Cyrillic_shorti,  Cyrillic_SHORTI,  U048B,                U048A                ] };
@@ -545,8 +533,6 @@ xkb_symbols "chm" {
 
     include "ru(winkeys)"
     name[Group1]= "Mari";
-
-    key.type[group1]="FOUR_LEVEL_ALPHABETIC";
 
     key <AC04> { [   Cyrillic_a,   Cyrillic_A,   U04D3,   U04D2  ] };
     key <AD03> { [   Cyrillic_u,   Cyrillic_U,   U04F1,   U04F0  ] };
