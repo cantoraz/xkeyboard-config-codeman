@@ -30,6 +30,7 @@ default partial xkb_types "default" {
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[Lock]  = Level2;
+	map[Lock+Shift] = Level1;
 	map[LevelThree] = Level3;
 	map[Shift+LevelThree] = Level4;
 	map[Lock+LevelThree] =  Level4;
@@ -38,6 +39,7 @@ default partial xkb_types "default" {
 	map[LevelFive] = Level5;
 	map[Shift+LevelFive] = Level6;
 	map[Lock+LevelFive]  = Level6;
+	map[Lock+Shift+LevelFive] = Level5;
 	map[LevelThree+LevelFive] = Level7;
 	map[Shift+LevelThree+LevelFive] = Level8;
 	map[Lock+LevelThree+LevelFive] =  Level8;
@@ -58,6 +60,7 @@ default partial xkb_types "default" {
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[Lock]  = Level2;
+	map[Lock+Shift] = Level1;
 	map[LevelThree] = Level3;
 	map[Shift+LevelThree] = Level4;
 	map[Lock+LevelThree] =  Level3;
@@ -66,7 +69,7 @@ default partial xkb_types "default" {
 	map[LevelFive] = Level5;
 	map[Shift+LevelFive] = Level6;
 	map[Lock+LevelFive]  = Level6;
-	map[Lock+Shift+LevelFive]  = Level6;
+	map[Lock+Shift+LevelFive] = Level5;
 	map[LevelThree+LevelFive] = Level7;
 	map[Shift+LevelThree+LevelFive] = Level8;
 	map[Lock+LevelThree+LevelFive] =  Level7;
@@ -74,8 +77,6 @@ default partial xkb_types "default" {
 
 	preserve[Lock+LevelThree] = Lock;
 	preserve[Lock+Shift+LevelThree] = Lock;
-	preserve[Lock+LevelFive] = Lock;
-	preserve[Lock+Shift+LevelFive] = Lock;
 	preserve[Lock+LevelThree+LevelFive] = Lock;
 	preserve[Lock+Shift+LevelThree+LevelFive] = Lock;
 
