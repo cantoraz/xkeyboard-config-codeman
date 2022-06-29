@@ -220,19 +220,14 @@ xkb_symbols "dvp" {
     name[Group1] = "Polish (programmer Dvorak)";
 
     //             Unmodified    Shift           AltGr            Shift+AltGr
-    // symbols row, left side
     key <AE01> { [ ampersand,    percent,        doublelowquotemark, rightdoublequotemark ] };
-
-    // symbols row, right side
-
-    // upper row, left side
 
     // upper row, right side
     key <AD08> { [ c,            C,              cacute,          Cacute     ] };
     key <AD10> { [ l,            L,              lstroke,         Lstroke    ] };
 
     // home row, left side
-    key <AC01> { [ a,            A,              aogonek,         Aogonek    ], type[Group1] = "EIGHT_LEVEL_ALPHABETIC" };
+    key <AC01> { [ a,            A,              aogonek,         Aogonek    ] };
     key <AC02> { [ o,            O,              oacute,          Oacute     ] };
     key <AC03> { [ e,            E,              eogonek,         Eogonek    ] };
 
