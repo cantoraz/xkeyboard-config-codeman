@@ -209,7 +209,7 @@ xkb_symbols "dvorak_altquotes" {
 // Those rules overwrite only the following rules from us(dvp):
 // * ccedilla on AltGr+c
 // * aring on Alt+a
-// * oslash/Ooblique on Alt+o
+// * oslash on Alt+o
 // * ae on Alt+e
 // * ntilde on Alt+n
 //

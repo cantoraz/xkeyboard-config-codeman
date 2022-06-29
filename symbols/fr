@@ -144,7 +144,7 @@ xkb_symbols "oss" {
     key <AD09>	{ [                o,                O,                   oe,                    OE ] }; // o O œ Œ
     key <AD10>	{ [                p,                P,          ocircumflex,           Ocircumflex ] }; // p P ô Ô
     key <AD11>	{ [  dead_circumflex,   dead_diaeresis,           dead_tilde,        dead_abovering ] }; // ^ ̈ ̃ ˚
-    key <AD12>	{ [           dollar,         sterling,               oslash,              Ooblique ] }; // $ £ ø Ø
+    key <AD12>	{ [           dollar,         sterling,               oslash,                Oslash ] }; // $ £ ø Ø
 
     // Third row
     key <AC01>	{ [                q,                Q,           adiaeresis,            Adiaeresis ] }; // q Q ä Ä
@@ -333,7 +333,7 @@ xkb_symbols "latin9" {
     key <AD12>	{ [          dollar,	    sterling,         ecircumflex,           ediaeresis ] };
 
     key <AC01>	{ [               q,               Q,         Acircumflex,           Adiaeresis ] };
-    key <AC02>	{ [               s,               S,              oslash,             Ooblique ] };
+    key <AC02>	{ [               s,               S,              oslash,               Oslash ] };
     key <AC03>	{ [               d,               D,         Ecircumflex,           Ediaeresis ] };
     key <AC04>	{ [               f,               F,           plusminus,          ordfeminine ] };
     key <AC05>	{ [               g,               G,                  ae,                   AE ] };

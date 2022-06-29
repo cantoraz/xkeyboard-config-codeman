@@ -70,7 +70,7 @@ xkb_symbols "basic" {
 	key <AE08> {	[	8,		parenleft, 	bracketleft,	braceleft	]	};
 	key <AE09> {	[	9,		parenright, 	bracketright,	braceright	]	};
 	key <AE10> {	[	0,		equal, 	U2260,		U2248		]	};
-	key <AE11> {	[	odiaeresis,	Odiaeresis, 	oslash,		Ooblique	]	};
+	key <AE11> {	[	odiaeresis,	Odiaeresis, 	oslash,		Oslash		]	};
 	key <AE12> {	[	minus,		underscore, 	endash,		emdash		]	};
 
 	

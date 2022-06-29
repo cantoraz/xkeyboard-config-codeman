@@ -142,7 +142,7 @@ xkb_symbols "fr-legacy" {
 
     key <AD04>	{ [         r,          R,     paragraph,  registered ]	};
     key <AD06>	{ [         y,          Y,           yen ]	};
-    key <AD09>	{ [         o,          O,        oslash,      Ooblique ] };
+    key <AD09>	{ [         o,          O,        oslash,      Oslash ] };
     key <AD10>	{ [         p,          P,         thorn,       THORN ]	};
     key <AD11>	{ [dead_circumflex, dead_circumflex,           degree ]	};
     key <AD12>	{ [  ccedilla,   Ccedilla, dead_tilde, dead_diaeresis ]	};
@@ -230,7 +230,7 @@ xkb_symbols "multi-2gr" {
     key <AD06>	{ [  leftarrow,            yen ]	};
     key <AD07>	{ [  downarrow,        uparrow ]	};
     key <AD08>	{ [ rightarrow,       idotless ]	};
-    key <AD09>	{ [     oslash,       Ooblique ]	};
+    key <AD09>	{ [     oslash,         Oslash ]	};
     key <AD10>	{ [      thorn,          THORN ]	};
     key <AD11>	{ [ NoSymbol, dead_abovering ]	};
     key <AD12>	{ [ dead_tilde,    dead_macron ]	};
@@ -350,7 +350,7 @@ xkb_symbols "multix" {
     key <AD06> {[         y,          Y,       NoSymbol, NoSymbol,      leftarrow,           yen ]};
     key <AD07> {[         u,          U,       NoSymbol, NoSymbol,      downarrow,       uparrow ]};
     key <AD08> {[         i,          I,       NoSymbol, NoSymbol,     rightarrow,      idotless ]};
-    key <AD09> {[         o,          O,        section, NoSymbol,         oslash,      Ooblique ]};
+    key <AD09> {[         o,          O,        section, NoSymbol,         oslash,        Oslash ]};
     key <AD10> {[         p,          P,      paragraph, NoSymbol,          thorn,         THORN ]};
 
     key.type[group1]="EIGHT_LEVEL";

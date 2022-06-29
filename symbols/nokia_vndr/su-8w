@@ -40,7 +40,7 @@ xkb_symbols "no" {
     key <AC07> { [ j,            J                                                     ] };
     key <AC08> { [ k,            K                                                     ] };
     key <AC09> { [ l,            L                                                     ] };
-    key <AC10> { [ oslash,       Ooblique                                              ] };
+    key <AC10> { [ oslash,       Oslash                                                ] };
     key <AC11> { [ ae,           AE                                                    ] };
 
     key <AB01> { [ z,            Z                                                     ] };
@@ -353,7 +353,7 @@ xkb_symbols "us" {
     key <AC06> { [ h,            H                                                     ] };
     key <AC07> { [ j,            J                                                     ] };
     key <AC08> { [ k,            K                                                     ] };
-    key <AC09> { [ l,            L,              oslash,               Ooblique        ] };
+    key <AC09> { [ l,            L,              oslash,               Oslash          ] };
     key <AC10> { [ semicolon,    colon,          paragraph,            degree          ] };
     key <AC11> { [ dead_acute,   dead_diaeresis, apostrophe,           quotedbl        ] };
 

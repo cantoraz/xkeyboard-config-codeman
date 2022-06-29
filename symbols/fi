@@ -347,7 +347,7 @@ xkb_symbols "fidvorak" {
 
     key <LSGT> { [  adiaeresis,      Adiaeresis,       ae,                    AE                    ] };
     key <AB01> { [  odiaeresis,      Odiaeresis,       dead_diaeresis,        dead_macron           ] };
-    key <AB02> { [  q,               Q,                ooblique,              Ooblique              ] };
+    key <AB02> { [  q,               Q,                oslash,                Oslash                ] };
     key <AB03> { [  j,               J                                                              ] };
     key <AB04> { [  k,               K,                kra                                          ] };
     key <AB05> { [  x,               X,                multiply,              periodcentered        ] };

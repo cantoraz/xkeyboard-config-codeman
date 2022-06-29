@@ -122,7 +122,7 @@ xkb_symbols "intl" {
     key <AC06> { [	   h,          H,             h,                H ] };
     key <AC07> { [	   j,          J,             j,                J ] };
     key <AC08> { [	   k,          K,            oe,               OE ] };
-    key <AC09> { [	   l,          L,        oslash,         Ooblique ] };
+    key <AC09> { [	   l,          L,        oslash,           Oslash ] };
     key <AC10> { [ semicolon,      colon,     paragraph,           degree ] };
     key <AC11> { [dead_acute, dead_diaeresis, apostrophe,        quotedbl ] };
 
@@ -289,7 +289,7 @@ xkb_symbols "dvorak-intl" {
     // key <AD07> { [	   g,	G		]	};
     key <AD08> { [	   c,          C,     copyright,             cent ] };
     key <AD09> { [	   r,          R,    registered,       registered ] };
-    key <AD10> { [	   l,          L,        oslash,         Ooblique ] };
+    key <AD10> { [	   l,          L,        oslash,           Oslash ] };
     key <AD11> { [     slash,   question,  questiondown,        dead_hook ] };
     // key <AD12> { [     equal,       plus,      multiply,         division ] };
 
@@ -589,7 +589,7 @@ xkb_symbols "dvp" {
 
     // home row, left side
     key <AC01> { [ a,               A,              aring,           Aring      ] };
-    key <AC02> { [ o,               O,              oslash,          Ooblique   ] };
+    key <AC02> { [ o,               O,              oslash,          Oslash     ] };
     key <AC03> { [ e,               E,              ae,              AE         ] };
     key <AC04> { [ u,               U,              eacute,          Eacute     ] };
 
@@ -644,7 +644,7 @@ xkb_symbols "dvorak-mac" {
     key <AD12> { [      equal,      plus,         notequal,    plusminus ] };
 
     key <AC01> { [     a,          A,             aring,       Aring ] };
-    key <AC02> { [     o,          O,            oslash,    Ooblique ] };
+    key <AC02> { [     o,          O,            oslash,      Oslash ] };
     key <AC03> { [     e,          E,        dead_acute,       acute ] };
     key <AC04> { [     u,          U,    dead_diaeresis,   diaeresis ] };
     key <AC05> { [     i,          I,   dead_circumflex, asciicircum ] };
@@ -758,7 +758,7 @@ xkb_symbols "mac" {
     key <AD06> { [	   y,          Y,           yen,       onequarter ] };
     key <AD07> { [	   u,        U,  dead_diaeresis,        diaeresis ] };
     key <AD08> { [	   i,        I, dead_circumflex,            U02C6 ] };
-    key <AD09> { [	   o,          O,        oslash,         Ooblique ] };
+    key <AD09> { [	   o,          O,        oslash,           Oslash ] };
     key <AD10> { [	   p,          P,      Greek_pi,            U220F ] };
     key <AD11> { [ bracketleft,  braceleft, leftdoublequotemark, rightdoublequotemark ] };
     key <AD12> { [bracketright, braceright, leftsinglequotemark, rightsinglequotemark ] };
@@ -816,7 +816,7 @@ xkb_symbols "colemak" {
     key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
     key <AD02> { [            w,            W,           aring,            Aring ] };
     key <AD03> { [            f,            F,          atilde,           Atilde ] };
-    key <AD04> { [            p,            P,          oslash,         Ooblique ] };
+    key <AD04> { [            p,            P,          oslash,           Oslash ] };
     key <AD05> { [            g,            G,     dead_ogonek,       asciitilde ] };
     key <AD06> { [            j,            J,         dstroke,          Dstroke ] };
     key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
@@ -882,7 +882,7 @@ xkb_symbols "colemak_dh" {
     key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
     key <AD02> { [            w,            W,           aring,            Aring ] };
     key <AD03> { [            f,            F,          atilde,           Atilde ] };
-    key <AD04> { [            p,            P,          oslash,         Ooblique ] };
+    key <AD04> { [            p,            P,          oslash,           Oslash ] };
     key <AD05> { [            b,            B,      dead_breve,       asciitilde ] };
     key <AD06> { [            j,            J,         dstroke,          Dstroke ] };
     key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
@@ -1099,7 +1099,7 @@ xkb_symbols "classmate-intl" {
     key <KPSU> { [ KP_Subtract, KP_Subtract, odiaeresis,           Odiaeresis     ] };
 
     key <KP2>  { [ KP_Down,     KP_2,        oe,                   OE             ] };
-    key <KP3>  { [ KP_Next,     KP_3,        oslash,               Ooblique       ] };
+    key <KP3>  { [ KP_Next,     KP_3,        oslash,               Oslash         ] };
     key <KPAD> { [ KP_Add,      KP_Add,      paragraph,            degree         ] };
 
     key <KP0>  { [ KP_Insert,   KP_0,        mu,                   mu             ] };
@@ -1162,7 +1162,7 @@ xkb_symbols "classmate-altgr-intl" {
 
     key <KP1>  { [ KP_End,      KP_1,        idiaeresis,           Idiaeresis     ] };
     key <KP2>  { [ KP_Down,     KP_2,        oe,                   OE             ] };
-    key <KP3>  { [ KP_Next,     KP_3,        oslash,               Ooblique       ] };
+    key <KP3>  { [ KP_Next,     KP_3,        oslash,               Oslash         ] };
     key <KPAD> { [ KP_Add,      KP_Add,      paragraph,            degree         ] };
 
     key <KP0>  { [ KP_Insert,   KP_0,        mu,                   mu             ] };
@@ -1488,7 +1488,7 @@ xkb_symbols "workman-intl" {
     key <AB04> { [     c,          C,     copyright,             cent ] };
     key <AB05> { [     v,          V,             v,                V ] };
     key <AB06> { [     k,          K,            oe,               OE ] };
-    key <AB07> { [     l,          L,        oslash,         Ooblique ] };
+    key <AB07> { [     l,          L,        oslash,           Oslash ] };
 
     key <CAPS> { [ BackSpace, Escape,     BackSpace,        BackSpace ] };
 
@@ -1655,7 +1655,7 @@ xkb_symbols "carpalx-intl" {
     key <AD07> { [	   f,          F,    adiaeresis,       Adiaeresis ] };
     key <AD08> { [	   u,          U,    udiaeresis,       Udiaeresis ] };
     key <AD09> { [	   b,          B,    odiaeresis,       Odiaeresis ] };
-    key <AD10> { [ semicolon,      colon,        oslash,         Ooblique ] };
+    key <AD10> { [ semicolon,      colon,        oslash,           Oslash ] };
     key <AD11> { [ bracketleft,  braceleft,  guillemotleft, leftdoublequotemark ] };
     key <AD12> { [bracketright, braceright, guillemotright, rightdoublequotemark ] };
 
@@ -2246,7 +2246,7 @@ xkb_symbols "drix" {
 	key <AE12> {[ plus,        equal,          apostrophe,           notequal              ]}; // + = ' ≠
 
 	// Second row
-	key <AD01> {[ q,           Q,              oslash,               Ooblique              ]}; // q Q ø Ø
+	key <AD01> {[ q,           Q,              oslash,               Oslash                ]}; // q Q ø Ø
 	key <AD02> {[ w,           W,              w,                    uparrow               ]}; // w W w ↑
 	key <AD03> {[ e,           E,              EuroSign,             EuroSign              ]}; // e E € €
 	key <AD04> {[ r,           R,              registered,           0x10020bd             ]}; // r R ® ₽

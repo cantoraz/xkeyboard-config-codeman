@@ -14,7 +14,7 @@ xkb_symbols "se" {
     key <AE11>	{ [      plus,   question,    backslash, questiondown ]	};
     key <AE12>	{ [dead_acute, dead_grave,    plusminus,      notsign ]	};
 
-    key <AC10>	{ [odiaeresis, Odiaeresis,       oslash,     Ooblique ]	};
+    key <AC10>	{ [odiaeresis, Odiaeresis,       oslash,       Oslash ]	};
     key <AC11>	{ [adiaeresis, Adiaeresis,           ae,           AE ]	};
     key <BKSL>	{ [apostrophe,   asterisk,        acute,     multiply ]	};
 
@@ -182,7 +182,7 @@ xkb_symbols "mac" {
     key <AE12> {	[           acute,           grave	]	};
     key <AD11> {	[	    aring,           Aring     	]	};
     key <AD12> {	[       diaeresis,     asciicircum, 	asciitilde			]	};
-    key <AC10> {	[      odiaeresis,      Odiaeresis, 	   oslash,	    Ooblique	]	};
+    key <AC10> {	[      odiaeresis,      Odiaeresis, 	   oslash,	      Oslash	]	};
     key <AC11> {	[      adiaeresis,      Adiaeresis,               ae,		AE	]	};
     key <BKSL> {	[      apostrophe,        asterisk,               at			]	};
     key <AB08> {	[           comma,       semicolon     	]	};

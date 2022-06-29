@@ -117,7 +117,7 @@ xkb_symbols "de_mac" {
     key <AD06> { [	z,	Z, 	Greek_OMEGA,	Iacute			]	};
     key <AD07> { [ 	u,	U, 	degree,		Ugrave			]	};
     key <AD08> { [ 	i,	I, 	exclamdown,	idotless		]	};
-    key <AD09> { [ 	o,	O, 	oslash,		Ooblique		]	};
+    key <AD09> { [	o,	O,	oslash,		Oslash			]	};
     key <AD10> { [ 	p,	P, 	Greek_pi,	Greek_PI		]	};
     key <AD11> { [	udiaeresis,	egrave, 	section,	ydiaeresis		]	};
     key <AD12> { [	dead_diaeresis,	exclam, 	grave,		apostrophe		]	};

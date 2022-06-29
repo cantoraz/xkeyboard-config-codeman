@@ -458,7 +458,7 @@ xkb_symbols "mmuock" {
    key <AD08> { [          i,           I,          U025B,         U0190 ] }; // U025B = open E
    key <AD09> { [          o,           O,      Greek_phi,     Greek_PHI ] };
    key <AD10> { [          p,           P,       Greek_pi,      Greek_PI ] };
-   key <AD11> { [     oslash,    Ooblique,    bracketleft,     braceleft ] };
+   key <AD11> { [     oslash,      Oslash,    bracketleft,     braceleft ] };
    key <AD12> { [Greek_sigma, Greek_SIGMA,   bracketright,    braceright ] }; 
 
    key <AC01> { [          a,           A,          U0303                ] }; // tone 0

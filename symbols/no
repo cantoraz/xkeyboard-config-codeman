@@ -17,7 +17,7 @@ xkb_symbols "basic" {
     key <AD04>	{ [         r,          R,   registered,    trademark ]	};
     key <AD10>	{ [         p,          P,     Greek_pi,     Greek_PI ]	};
 
-    key <AC10>	{ [    oslash,   Ooblique,   dead_acute, dead_doubleacute ] };
+    key <AC10>	{ [    oslash,     Oslash,   dead_acute, dead_doubleacute ] };
     key <AC11>	{ [        ae,         AE, dead_circumflex, dead_caron]	};
     key <BKSL>	{ [apostrophe,   asterisk, dead_doubleacute, multiply ]	};
 
@@ -43,7 +43,7 @@ xkb_symbols "nodeadkeys" {
 
     key <AE12>	{ [ backslash,      grave,        acute,       ogonek ]	};
     key <AD12>	{ [ diaeresis, asciicircum,  asciitilde,       macron ]	};
-    key <AC10>	{ [    oslash,   Ooblique,        acute,  doubleacute ]	};
+    key <AC10>	{ [    oslash,     Oslash,        acute,  doubleacute ]	};
     key <AC11>	{ [        ae,         AE,  asciicircum,        caron ]	};
     key <AB08>	{ [     comma,  semicolon,      cedilla,       ogonek ]	};
     key <AB09>	{ [    period,      colon, periodcentered,   abovedot ]	};
@@ -96,7 +96,7 @@ xkb_symbols "dvorak" {
     key <AC11> { [	minus,	underscore, hyphen,	diaeresis] };
     key <BKSL> { [	 less,	greater, guillemotleft, guillemotright	] };
 
-    key <LSGT> { [	oslash,	Ooblique,  bar,	backslash	 ] };
+    key <LSGT> { [     oslash,	Oslash, bar,	backslash	 ] };
     key <AB01> { [	   ae,	AE,     braceleft,	bracketleft] };
     key <AB05> { [	    x,	X,      multiply		 ] };
     key <AB07> { [	    m,	M,	mu			 ] };
@@ -155,7 +155,7 @@ xkb_symbols "smi" {
     key <AC07>	{ [         j,          J,      notsign,     multiply ]	};
     key <AC08>	{ [         k,          K,        U01E9,        U01E8 ]	};
     key <AC09>	{ [         l,          L,       degree,       hyphen ]	};
-    key <AC10>	{ [    oslash,   Ooblique,   odiaeresis,   Odiaeresis ]	};
+    key <AC10>	{ [    oslash,     Oslash,   odiaeresis,   Odiaeresis ]	};
     key <AC11>	{ [        ae,         AE,   adiaeresis,   Adiaeresis ]	};
     key <BKSL>	{ [   dstroke,    Dstroke,   apostrophe,     asterisk ]	};
 
@@ -210,7 +210,7 @@ xkb_symbols "mac" {
     key <AD11>	{ [     aring,      Aring     ]	};
     key <AD12>	{ [ diaeresis, asciicircum,  asciitilde,  dead_macron ]	};
 
-    key <AC10>	{ [    oslash,   Ooblique,   odiaeresis,   Odiaeresis ]	};
+    key <AC10>	{ [    oslash,     Oslash,   odiaeresis,   Odiaeresis ]	};
     key <AC11>	{ [        ae,         AE     ]	};
     key <BKSL>	{ [        at,   asterisk     ]	};
 };
@@ -243,7 +243,7 @@ xkb_symbols "colemak" {
     key <AD07>	{ [         l,          L,      lstroke,      Lstroke ] };
     key <AD08>	{ [         u,          U,    downarrow,      uparrow ] };
     key <AD09>	{ [         y,          Y,    leftarrow,          yen ] };
-    key <AD10>	{ [    oslash,   Ooblique,   dead_acute, dead_doubleacute ] };
+    key <AD10>	{ [    oslash,     Oslash,   dead_acute, dead_doubleacute ] };
 
     key <AC02>	{ [         r,          R,   registered,    trademark ] };
     key <AC03>	{ [         s,          S,       ssharp,      section ] };

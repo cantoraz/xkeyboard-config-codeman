@@ -82,7 +82,7 @@ xkb_symbols "oss_frbe" {
     key <AE08>	{ [           exclam,                8,           asciitilde,            exclamdown ] }; // ! 8 ~ ¡
     key <AE09>	{ [         ccedilla,                9,            braceleft,              Ccedilla ] }; // ç 9 { Ç
     key <AE10>	{ [           agrave,                0,           braceright,                Agrave ] }; // à 0 } À
-    key <AE11>	{ [       parenright,           degree,               oslash,              Ooblique ] }; // ) ° ø Ø 
+    key <AE11>	{ [       parenright,           degree,               oslash,                Oslash ] }; // ) ° ø Ø
     key <AE12>	{ [            minus,       underscore,            0x1002011,             plusminus ] }; // - _ - (tiret insécable) ±
 
     // Second row
