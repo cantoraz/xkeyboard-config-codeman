@@ -228,14 +228,14 @@ xkb_symbols "ike" {
 partial
 xkb_symbols "multix" {
 
-    name[Group1] = "Canadian (intl.)";
+    name[Group1] = "Canadian (CSA)";
 
     key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC";
     key <TLDE> {[     slash,  backslash,            bar, NoSymbol,       NoSymbol,        hyphen ]};
     key <AE01> {[         1,     exclam,      plusminus, NoSymbol,    onesuperior,    exclamdown ]};
     key <AE02> {[         2,         at,             at, NoSymbol,    twosuperior,      NoSymbol ]};
     key <AE03> {[         3, numbersign,       sterling, NoSymbol,  threesuperior,      sterling ]};
-    key <AE04> {[         4,     dollar,           cent, NoSymbol,     onequarter,      currency ]};
+    key <AE04> {[         4,     dollar,       currency, NoSymbol,     onequarter,      EuroSign ]};
     key <AE05> {[         5,    percent,       currency, NoSymbol,        onehalf,  threeeighths ]};
     key <AE06> {[         6,   question,        notsign, NoSymbol,  threequarters,   fiveeighths ]};
     key <AE07> {[         7,  ampersand,      braceleft, NoSymbol,       NoSymbol,  seveneighths ]};
@@ -248,7 +248,7 @@ xkb_symbols "multix" {
     key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC";
     key <AD01> {[         q,          Q,       NoSymbol, NoSymbol,       NoSymbol,   Greek_OMEGA ]};
     key <AD02> {[         w,          W,       NoSymbol, NoSymbol,        lstroke,       Lstroke ]};
-    key <AD03> {[         e,          E,       NoSymbol, NoSymbol,             oe,            OE ]};
+    key <AD03> {[         e,          E,       EuroSign, NoSymbol,             oe,            OE ]};
     key <AD04> {[         r,          R,       NoSymbol, NoSymbol,      paragraph,    registered ]};
     key <AD05> {[         t,          T,       NoSymbol, NoSymbol,         tslash,        Tslash ]};
     key <AD06> {[         y,          Y,       NoSymbol, NoSymbol,      leftarrow,           yen ]};
