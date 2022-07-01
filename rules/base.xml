@@ -2966,18 +2966,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>multi</name>
-            <description>Canadian (intl., 1st part)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>multi-2gr</name>
-            <description>Canadian (intl., 2nd part)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>ike</name>
             <!-- Keyboard indicator for Inuktikut layouts -->
             <shortDescription>ike</shortDescription>
