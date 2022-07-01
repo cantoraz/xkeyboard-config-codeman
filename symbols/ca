@@ -245,7 +245,6 @@ xkb_symbols "multix" {
     key <AE11> {[     minus, underscore,        onehalf, NoSymbol,       NoSymbol,  questiondown ]};
     key <AE12> {[     equal,       plus,        notsign, NoSymbol,   dead_cedilla,   dead_ogonek ]};
 
-    key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC";
     key <AD01> {[         q,          Q,       NoSymbol, NoSymbol,       NoSymbol,   Greek_OMEGA ]};
     key <AD02> {[         w,          W,       NoSymbol, NoSymbol,        lstroke,       Lstroke ]};
     key <AD03> {[         e,          E,       EuroSign, NoSymbol,             oe,            OE ]};
@@ -281,19 +280,19 @@ xkb_symbols "multix" {
     key <BKSL> {[    agrave,     Agrave,     braceright, NoSymbol,       NoSymbol,    dead_breve ]};
 
     key <LSGT> {[    ugrave,     Ugrave,         degree, NoSymbol,       NoSymbol,     brokenbar ]};
-
-    key.type[group1]="FOUR_LEVEL_SEMIALPHABETIC";
     key <AB01> {[         z,          Z,  guillemotleft, NoSymbol ]};
     key <AB02> {[         x,          X, guillemotright, NoSymbol ]};
-
-    key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC";
     key <AB03> {[         c,          C,       NoSymbol, NoSymbol,           cent,     copyright ]};
     key <AB04> {[         v,          V,       NoSymbol, NoSymbol,  leftdoublequotemark,  leftsinglequotemark ]};
     key <AB05> {[         b,          B,       NoSymbol, NoSymbol, rightdoublequotemark, rightsinglequotemark ]};
     key <AB06> {[         n,          N,       NoSymbol, NoSymbol,          U0149,         U266A ]}; // ŉ ♪
     key <AB07> {[         m,          M,             mu, NoSymbol,             mu,     masculine ]};
+
+    key.type[group1]="EIGHT_LEVEL";
     key <AB08> {[     comma, apostrophe,           less, NoSymbol, Greek_horizbar,      multiply ]};
     key <AB09> {[    period,   quotedbl,        greater, NoSymbol, periodcentered,      division ]};
+
+    key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC";
     key <AB10> {[    eacute,     Eacute,     dead_acute, NoSymbol,       NoSymbol, dead_abovedot ]};
 
     include "nbsp(level3s)"
