@@ -8020,12 +8020,6 @@
       </option>
       <option>
         <configItem>
-          <name>nbsp:level3s</name>
-          <description>Non-breaking space at the 3rd level, nothing at the 4th level</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
           <name>nbsp:level3n</name>
           <description>Non-breaking space at the 3rd level, thin non-breaking space at the 4th level</description>
         </configItem>
@@ -8070,12 +8064,6 @@
         <configItem>
           <name>nbsp:zwnj2nb3</name>
           <description>Zero-width non-joiner at the 2nd level, non-breaking space at the 3rd level</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>nbsp:zwnj2nb3s</name>
-          <description>Zero-width non-joiner at the 2nd level, non-breaking space at the 3rd level, nothing at the 4th level</description>
         </configItem>
       </option>
       <option>
