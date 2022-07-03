@@ -236,8 +236,8 @@ xkb_symbols "multix" {
     key <AE02> {[         2,         at,             at, NoSymbol,    twosuperior,      NoSymbol ]};
     key <AE03> {[         3, numbersign,       sterling, NoSymbol,  threesuperior,      sterling ]};
     key <AE04> {[         4,     dollar,       currency, NoSymbol,     onequarter,      EuroSign ]};
-    key <AE05> {[         5,    percent,       currency, NoSymbol,        onehalf,  threeeighths ]};
-    key <AE06> {[         6,   question,        notsign, NoSymbol,  threequarters,   fiveeighths ]};
+    key <AE05> {[         5,    percent,       NoSymbol, NoSymbol,        onehalf,  threeeighths ]};
+    key <AE06> {[         6,   question,       NoSymbol, NoSymbol,  threequarters,   fiveeighths ]};
     key <AE07> {[         7,  ampersand,      braceleft, NoSymbol,       NoSymbol,  seveneighths ]};
     key <AE08> {[         8,   asterisk,     braceright, NoSymbol,       NoSymbol,     trademark ]};
     key <AE09> {[         9,  parenleft,    bracketleft, NoSymbol,       NoSymbol,     plusminus ]};
