@@ -79,3 +79,25 @@ xkb_symbols "intl" {
 
 	include "level3(ralt_switch)"
 };
+
+partial alphanumeric_keys
+xkb_symbols "phonetic" {
+	include "ru(phonetic)"
+	name[Group1]= "Belarusian (phonetic)";
+
+	// Mostly same as good old YAWERTY layout, but with correct
+	// Belarusian i and ў (u-short) instead of щ (shcha). We also
+	// keep originals on level3 just in case.
+	key <AD12> {[ Byelorussian_shortu, Byelorussian_SHORTU, Cyrillic_shcha, Cyrillic_SHCHA ]};
+	key <LatI> {[ Ukrainian_i, Ukrainian_I, Cyrillic_i, Cyrillic_I ]};
+
+	// Lets also add level3+u to enable another way to input u-short
+	key <LatU> {[ Cyrillic_u, Cyrillic_U, Byelorussian_shortu, Byelorussian_SHORTU ]};
+
+	// Since we already enable level3 lets also do alternative
+	// means for io and hardsign.
+	key <LatE> {[ Cyrillic_ie, Cyrillic_IE, Cyrillic_io, Cyrillic_IO ]};
+	key <LatX> {[ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN ]};
+
+	include "level3(ralt_switch)"
+};
