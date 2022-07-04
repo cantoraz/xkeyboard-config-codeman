@@ -4533,12 +4533,6 @@
             <description>Spanish (Latin American, Colemak)</description>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>colemak-gaming</name>
-            <description>Spanish (Latin American, Colemak for gaming)</description>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
