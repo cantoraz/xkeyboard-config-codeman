@@ -42,6 +42,13 @@ xkb_symbols "rctrl_switch" {
     key <RCTL> {[  Mode_switch  ]};
 };
 
+// The Caps_Lock key (while pressed) chooses the next group,
+// while Alt+Caps_Lock toggles CapsLock.
+partial modifier_keys
+xkb_symbols "caps_switch" {
+    key <CAPS> {[  Mode_switch,  Caps_Lock  ], type[group1] = "PC_ALT_LEVEL2" };
+};
+
 // Pressing the right Alt key switches to the next group.
 partial modifier_keys
 xkb_symbols "toggle" {
@@ -60,6 +67,13 @@ partial modifier_keys
 xkb_symbols "shifts_toggle" {
     key <LFSH> {[  Shift_L,  ISO_Prev_Group  ]};
     key <RTSH> {[  Shift_R,  ISO_Next_Group  ]};
+};
+
+// Pressing Caps_Lock switches to the next group,
+// while Shift+Caps_Lock toggles CapsLock.
+partial modifier_keys
+xkb_symbols "caps_toggle" {
+    key <CAPS> {[  ISO_Next_Group,  Caps_Lock  ], type[group1] = "TWO_LEVEL" };
 };
 
 // Pressing Shift+Caps_Lock switches to the next group.
