@@ -46,6 +46,7 @@ if get_option('compat-rules')
       'compat/0030-l2v2_c.part',
       'compat/0031-l3v3_c.part',
       'compat/0032-l4v4_c.part',
+      'compat/0041-o_s.part',
   ]
 
   layout_mappings = files('compat/layoutsMapping.lst')

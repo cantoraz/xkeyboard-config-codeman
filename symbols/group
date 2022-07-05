@@ -85,16 +85,6 @@ xkb_symbols "shift_caps_toggle" {
     };
 };
 
-// Pressing Caps_Lock selects the first group,
-// pressing Shift+Caps_Lock selects the second group.
-partial modifier_keys
-xkb_symbols "shift_caps_switch" {
-    key <CAPS> {
-        type[group1] = "TWO_LEVEL",
-        [  ISO_First_Group,  ISO_Last_Group  ]
-    };
-};
-
 // Pressing Alt+Space switches to the next group.
 partial modifier_keys
 xkb_symbols "alt_space_toggle" {
@@ -122,10 +112,18 @@ xkb_symbols "ctrl_space_toggle" {
   };
 };
 
+
+// Pressing Caps_Lock selects the first group,
+// pressing Shift+Caps_Lock selects the second group.
+partial modifier_keys
+xkb_symbols "caps_select" {
+    key <CAPS> {[  ISO_First_Group,  ISO_Last_Group  ], type[group1] = "TWO_LEVEL" };
+};
+
 // Pressing the left Win key selects the first group,
 // pressing the right Win key or the Menu key selects the second group.
 partial modifier_keys
-xkb_symbols "win_menu_switch" {
+xkb_symbols "win_menu_select" {
     key <LWIN> {[  ISO_First_Group  ]};
     key <RWIN> {[  ISO_Last_Group  ]};
     key <MENU> {[  ISO_Last_Group  ]};
@@ -134,7 +132,7 @@ xkb_symbols "win_menu_switch" {
 // Pressing the left Ctrl key selects the first group,
 // pressing the right Ctrl key selects the second group.
 partial modifier_keys
-xkb_symbols "lctrl_rctrl_switch" {
+xkb_symbols "ctrl_select" {
     key <LCTL> {[  ISO_First_Group  ]};
     key <RCTL> {[  ISO_Last_Group  ]};
 };
