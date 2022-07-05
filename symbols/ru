@@ -1047,10 +1047,9 @@ xkb_symbols "prxn" {
 // eng: Maps <CAPS> for reaching the fifth level
 // rus: Составляетъ <CAPS> для достиженія пятаго уровня
 // srp: Саставља <CAPS> за достизање петег ступња
-
 	include "level5(caps_switch)"
 
-// eng: Offers pressing both shift keys for capslock
+// eng: Allows pressing both Shift keys for enabling ShiftLock; one Shift releases it
 // rus: Предоставляетъ нажатие обѣихъ клавишъ Shift для защелкиванія прописности буквъ
 // srp: Ставља на располагање притискивање обију тастера Shift за учвршћивање верзала
 	include "shift(both_shiftlock)"
@@ -1059,11 +1058,6 @@ xkb_symbols "prxn" {
 // rus: Дѣлаетъ что <KPDL> отдаетъ запятую вмѣсто точки, такъ какъ запятая десятичный раздѣлитель въ языкахъ пишемыхъ кириллицей
 // srp: Ради да <KPDL> враћа зарез уместо точке, будући да зарез је десетни разделитељ у језицима који се пишу ћирилицом
 	include "kpdl(comma)"
-
-// eng: Bug notice: One has to set lv5:rwin_switch_lock or one of the other level 5 locks for the caps switch to work!
-// rus: Приходится ставить lv5:rwin_switch_lock либо одинъ изъ другихъ затворовъ пятаго уровня, чтобы работалъ переключатель Caps!
-// srp: Потребно да се ставља lv5:rwin_switch_lock или једна из других брава петег ступња, да би шљакао пребацивач Caps!
-// https://bugs.freedesktop.org/show_bug.cgi?id=102189
 };
 
 
