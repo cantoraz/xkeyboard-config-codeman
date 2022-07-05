@@ -43,8 +43,6 @@ if xsltproc.found()
   # emulating what the macros do for vendorversion, hardcoding the man
   # suffixes
   man_substs.set('vendorversion', '"@0@ @1@" "X Version 11"'.format(meson.project_name(), meson.project_version()))
-  man_substs.set('appmansuffix', '1')
-  man_substs.set('miscmansuffix', '7')
   xsl = configure_file(input: 'man/man.xsl',
                        output: 'man.xsl',
                        configuration: man_substs,
