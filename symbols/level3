@@ -86,8 +86,6 @@ xkb_symbols "lwin_switch" {
 };
 
 // The right Win key (while pressed) chooses the third shift level.
-// (When using this map, you should set your keyboard as pc101 or pc102
-// instead of pc104 or pc105.)
 partial modifier_keys
 xkb_symbols "rwin_switch" {
   key <RWIN> {
