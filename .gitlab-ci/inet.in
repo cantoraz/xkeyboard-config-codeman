@@ -962,15 +962,6 @@ xkb_symbols "thinkpad60" {
     key <I1F> { [ XF86VendorHome ] };
 };
 
-// IBM Space Saver
-partial alphanumeric_keys
-xkb_symbols "ibm_spacesaver" {
-    key <NMLK>  {
-        type="ONE_LEVEL",
-        symbols[Group1]= [ Num_Lock ]
-    };
-};
-
 
 // Logitech
 
