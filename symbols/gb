@@ -1,10 +1,10 @@
+// Keyboard layouts for Great Britain.
+
 default partial alphanumeric_keys
 xkb_symbols "basic" {
 
-    // Describes the differences between a very simple en_US
-    // keyboard and a very simple U.K. keyboard layout defined by
-    // the SVR4 European Language Supplement and sometimes also
-    // known as the IBM 166 layout.
+    // The basic UK layout, also known as the IBM 166 layout,
+    // but with the useless brokenbar pushed two levels up.
 
     include "latin"
 
@@ -24,34 +24,27 @@ xkb_symbols "basic" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "intl" { 
+xkb_symbols "intl" {
 
-    // Describes the differences between a very simple en_US 
-    // keyboard and a very simple U.K. keyboard layout with 
-    // dead keys. By Phil Jones (philjones1@blueyonder.co.uk) 
+    // A UK layout but with five accents made into dead keys:
+    // grave, diaeresis, circumflex, acute, and tilde.
+    // By Phil Jones <philjones1 at blueyonder.co.uk>.
 
-    // Includes the following keys: 
-    // dead_grave 
-    // dead_acute 
-    // dead_circumflex 
-    // dead_tilde 
-    // dead_diaeresis 
-
-    include "latin" 
+    include "latin"
 
     name[Group1]="English (UK, intl., with dead keys)";
 
     key <TLDE>  { [ dead_grave,    notsign,            bar,         bar ] };
-    key <AE02>  { [   2,  dead_diaeresis,      twosuperior,     onehalf ] };
-    key <AE03>  { [   3,        sterling,    threesuperior,    onethird ] };
-    key <AE04>  { [   4,          dollar,         EuroSign,  onequarter ] };
-    key <AE06>  { [   6, dead_circumflex,         NoSymbol,    onesixth ] };
+    key <AE02>  { [   2,    dead_diaeresis,    twosuperior,     onehalf ] };
+    key <AE03>  { [   3,          sterling,  threesuperior,    onethird ] };
+    key <AE04>  { [   4,            dollar,       EuroSign,  onequarter ] };
+    key <AE06>  { [   6,   dead_circumflex,  threequarters,    onesixth ] };
 
     key <AC11>  { [ dead_acute,         at,     apostrophe,         bar ] };
     key <BKSL>  { [ numbersign, dead_tilde,            bar,         bar ] };
 
     key <LSGT>  { [  backslash,        bar,            bar,         bar ] };
-    key <AB08>  { [      comma,       less,       ccedilla,         Ccedilla ] };
+    key <AB08>  { [      comma,       less,       ccedilla,    Ccedilla ] };
 
     include "level3(ralt_switch)"
 };
@@ -159,6 +152,7 @@ xkb_symbols "dvorak" {
 };
 
 // Dvorak letter positions, but punctuation all in the normal UK positions.
+
 partial alphanumeric_keys
 xkb_symbols "dvorakukp" {
     include "gb(dvorak)"
@@ -173,12 +167,8 @@ xkb_symbols "dvorakukp" {
     key <AC11> {        [apostrophe,    at,         dead_circumflex, dead_caron] };
 };
 
-// Copied from macintosh_vndr/gb
 partial alphanumeric_keys
 xkb_symbols "mac" {
-
-    // Describes the differences between a very simple en_US
-    // keyboard and a very simple U.K. keyboard layout
 
     include "latin"
 
@@ -219,68 +209,40 @@ xkb_symbols "mac_intl" {
 partial alphanumeric_keys
 xkb_symbols "pl" {
 
-    // Polish layout based on British keyboard
-    // Adopted 2016 by Aleksander Kowalski
-    
-    include "latin"
-    
+    // Polish accented letters on upper levels of corresponding base letters.
+    // Idea from Wawrzyniec Niewodniczański, adapted by Aleksander Kowalski.
+
+    include "gb(basic)"
+
     name[Group1]="Polish (British keyboard)";
 
-    key <TLDE>{ [     grave,    notsign,          bar,          bar ]};
-    key <AE02>{ [         2,   quotedbl,  twosuperior,    oneeighth ]};
-    key <AE03>{ [         3,   sterling, threesuperior,    sterling ]};
-    key <AE04>{ [         4,     dollar,     EuroSign,   onequarter ]};
-    
-    key <AD01>  { [         q,          Q ] };
-    key <AD02>  { [         w,          W ] };
-    key <AD03>{ [         e,          E,      eogonek,      Eogonek ]   };
+    key <AD03>  { [         e,          E,      eogonek,      Eogonek ] };
     key <AD09>  { [         o,          O,       oacute,       Oacute ] };
-    
+
     key <AC01>  { [         a,          A,      aogonek,      Aogonek ] };
     key <AC02>  { [         s,          S,       sacute,       Sacute ] };
-    key <AC04>  { [         f,          F ] };
-    key <AC11>{ [apostrophe,         at, dead_circumflex, dead_caron]};
-    key <BKSL>{ [numbersign, asciitilde,   dead_grave,   dead_breve ]};
 
-    key <LSGT>{ [ backslash,        bar,          bar,    brokenbar ]};
     key <AB01>  { [         z,          Z,    zabovedot,    Zabovedot ] };
     key <AB02>  { [         x,          X,       zacute,       Zacute ] };
     key <AB03>  { [         c,          C,       cacute,       Cacute ] };
     key <AB06>  { [         n,          N,       nacute,       Nacute ] };
-
-    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
 xkb_symbols "gla" {
 
-    // Describes the differences between a very simple en_US
-    // keyboard and a Scots Gaelic keyboard based on the Irish
-	// Gaelic layout. This is essentially a UK English layout
-	// but with grave accented characters available on
-	// AltGr+accent keys.
+    // Grave-accented letters on the upper levels of the relevant vowels.
 
-    include "latin"
+    include "gb(basic)"
 
     name[Group1]="Scottish Gaelic";
 
-    key <TLDE>	{ [     grave,    notsign,          bar,          bar ]	};
-    key <AE02>	{ [         2,   quotedbl,  twosuperior,    oneeighth ]	};
-    key <AE03>	{ [         3,   sterling, threesuperior,    sterling ]	};
-    key <AE04>	{ [         4,     dollar,     EuroSign,   onequarter ]	};
-
     key <AD03> { [   e,                 E,          egrave,      Egrave ] };
-    key <AD08> { [   i,                 I,          igrave,      Igrave ] };
     key <AD07> { [   u,                 U,          ugrave,      Ugrave ] };
+    key <AD08> { [   i,                 I,          igrave,      Igrave ] };
     key <AD09> { [   o,                 O,          ograve,      Ograve ] };
 
     key <AC01> { [   a,                 A,          agrave,      Agrave ] };
-    key <AC11>	{ [apostrophe,         at, dead_circumflex, dead_caron]	};
-    key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
-
-    key <LSGT>	{ [ backslash,        bar,          bar,    brokenbar ]	};
-
-    include "level3(ralt_switch)"
 };
 
 // EXTRAS:
