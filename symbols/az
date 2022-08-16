@@ -131,7 +131,7 @@ xkb_symbols "azb"
     key <AC10> { [ Arabic_keheh,     colon,                   semicolon          ] };
     key <AC11> { [ Arabic_gaf,       Arabic_semicolon,        quotedbl           ] };
 
-    key <AB01> { [ Arabic_zah,       Arabic_kaf,              VoidSymbol         ] };
+    key <AB01> { [ Arabic_zah,       Arabic_sukun,            VoidSymbol         ] };
     key <AB02> { [ Arabic_tah,       0x1000653,               VoidSymbol         ] };
     key <AB03> { [ Arabic_zain,      Arabic_jeh,              VoidSymbol         ] };
     key <AB04> { [ Arabic_ra,        Arabic_superscript_alef, 0x1000656          ] };
@@ -148,4 +148,5 @@ xkb_symbols "azb"
     key <BKSL> { [ backslash,        bar,                     0x1002010          ] };
 
     include "nbsp(zwnj2nb3nnb4)"
+    include "level3(ralt_switch)"
 };
