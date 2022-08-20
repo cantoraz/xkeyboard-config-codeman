@@ -853,6 +853,16 @@
             </languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>winkeys-p</name>
+            <shortDescription>winkeys-p</shortDescription>
+            <description>Russian (Programmer)</description>
+            <languageList>
+              <iso639Id>rus</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
