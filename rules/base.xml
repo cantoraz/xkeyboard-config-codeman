@@ -7259,7 +7259,7 @@
       </option>
       <option>
         <configItem>
-          <name>ctrl:swapcaps_hyper</name>
+          <name>ctrl:hyper_capscontrol</name>
           <description>Caps Lock as Ctrl, Ctrl as Hyper</description>
         </configItem>
       </option>
