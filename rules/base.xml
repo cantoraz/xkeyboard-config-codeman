@@ -1826,12 +1826,6 @@
             <description>Azerbaijani (Cyrillic)</description>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>azb</name>
-            <description>Azerbaijani (Iran)</description>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
@@ -3382,6 +3376,16 @@
           <configItem>
             <name>pes_keypad</name>
             <description>Persian (with Persian keypad)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>azb</name>
+            <shortDescription>azb</shortDescription>
+            <description>Azerbaijani (Iran)</description>
+            <languageList>
+              <iso639Id>azb</iso639Id>
+            </languageList>
           </configItem>
         </variant>
         <variant>
