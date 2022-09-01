@@ -144,16 +144,13 @@ xkb_symbols "pes_part_keypad" {
 partial alphanumeric_keys
 xkb_symbols "azb"
 {
-    name[Group1]= "Azerbaijani (Iran)";
     include "ir(pes)"
-    include "nbsp(zwnj2nb3nnb4)"
-    include "level3(ralt_switch)"
+    name[Group1]= "Azerbaijani (Iran)";
 
     // Letters and symbols for South Azerbaijani
-    key <AD01> { [ Arabic_dad,  U06C7,           degree             ] };
-    key <AD02> { [ Arabic_sad,  U06C6,           Arabic_dammatan    ] };
-    key <AD03> { [ Arabic_theh, Arabic_kasratan, U0652              ] };
-    key <AC03> { [ Farsi_yeh,   U063D,           Arabic_alefmaksura ] };
+    key <AD01> { [ Arabic_dad,  U06C7,           degree             ] };  // ۇ
+    key <AD02> { [ Arabic_sad,  U06C6,           Arabic_dammatan    ] };  // ۆ
+    key <AC03> { [ Farsi_yeh,   U063D,           Arabic_alefmaksura ] };  // ؽ
     key <AB01> { [ Arabic_zah,  Arabic_sukun,    VoidSymbol         ] };
     key <AB05> { [ Arabic_thal, Arabic_dammatan, VoidSymbol         ] };
 };
