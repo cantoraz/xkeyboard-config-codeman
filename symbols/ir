@@ -54,7 +54,7 @@ xkb_symbols "pes_part_basic" {
     // Persian letters and symbols
     key <AD01> { [ Arabic_dad,		Arabic_sukun,		degree		] };
     key <AD02> { [ Arabic_sad,		Arabic_dammatan,	VoidSymbol	] };
-    key <AD03> { [ Arabic_theh,		Arabic_kasratan,	0x13a4		] };
+    key <AD03> { [ Arabic_theh,		Arabic_kasratan,	EuroSign	] };
     key <AD04> { [ Arabic_qaf,		Arabic_fathatan,	VoidSymbol	] };
     key <AD05> { [ Arabic_feh,		Arabic_damma,		VoidSymbol	] };
     key <AD06> { [ Arabic_ghain,	Arabic_kasra,		VoidSymbol	] };
