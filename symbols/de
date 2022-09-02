@@ -216,7 +216,7 @@ xkb_symbols "T3" {
     key <AE01>	{[               1,          exclam, rightsinglequotemark,   NoSymbol,     onesuperior,      exclamdown,           U02B9 ]};
     key <AE02>	{[               2,        quotedbl,     twosuperior,        NoSymbol,     twosuperior,        currency,           U02BA ]};
     key <AE03>	{[               3,         section,   threesuperior,        NoSymbol,   threesuperior,        sterling,           U02BF ]};
-    key <AE04>	{[               4,          dollar,          emdash,        NoSymbol,      onequarter,          0x20AC,           U02BE ]};
+    key <AE04>	{[               4,          dollar,          emdash,        NoSymbol,      onequarter,        EuroSign,           U02BE ]};
     key <AE05>	{[               5,         percent,      exclamdown,        NoSymbol,         onehalf,         uparrow,           U02C1 ]};
     key <AE06>	{[               6,       ampersand,    questiondown,        NoSymbol,   threequarters,       downarrow,           U02C0 ]};
     key <AE07>	{[               7,           slash,       braceleft,        NoSymbol,       oneeighth,       leftarrow,       braceleft ]};
