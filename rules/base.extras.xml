@@ -832,27 +832,7 @@
               <iso639Id>neg</iso639Id>
             </languageList>
           </configItem>
-        </variant>
-        <variant>
-          <configItem popularity="exotic">
-            <name>ruchey_cyrillic</name>
-            <shortDescription>ru</shortDescription>
-            <description>Russian (Engineering, Cyrillic)</description>
-            <languageList>
-              <iso639Id>rus</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem popularity="exotic">
-            <name>ruchey_latin</name>
-            <shortDescription>us</shortDescription>
-            <description>Russian (Engineering, Latin)</description>
-            <languageList>
-              <iso639Id>rus</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
+        </variant>        
         <variant>
           <configItem popularity="exotic">
             <name>winkeys-p</name>
