@@ -7781,6 +7781,12 @@
       </option>
       <option>
         <configItem>
+          <name>compose:ins</name>
+          <description>Insert</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>compose:prsc</name>
           <description>PrtSc</description>
         </configItem>

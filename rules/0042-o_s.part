@@ -106,6 +106,7 @@
   compose:caps-altgr	=	+compose(caps-altgr)
   compose:102		=	+compose(102)
   compose:102-altgr	=	+compose(102-altgr)
+  compose:ins		=	+compose(ins)
   compose:paus		=	+compose(paus)
   compose:prsc		=	+compose(prsc)
   compose:sclk		=	+compose(sclk)
