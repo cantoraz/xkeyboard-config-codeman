@@ -1372,7 +1372,7 @@ msgstr "Bosnio"
 
 #: rules/base.xml:2335
 msgid "Bosnian (with guillemets)"
-msgstr "Serbio (con guillemots)"
+msgstr "Bosnio (con guillemets)"
 
 #: rules/base.xml:2341
 msgid "Bosnian (with Bosnian digraphs)"
@@ -1673,7 +1673,7 @@ msgstr "Croata"
 
 #: rules/base.xml:2925
 msgid "Croatian (with guillemets)"
-msgstr "Serbio (con guillemots)"
+msgstr "Croata (con guillemets)"
 
 #: rules/base.xml:2931
 msgid "Croatian (with Croatian digraphs)"
@@ -2573,11 +2573,11 @@ msgstr "Montenegrino (latino Unicode, QWERTY)"
 
 #: rules/base.xml:4415
 msgid "Montenegrin (Cyrillic, with guillemets)"
-msgstr "Montenegrino (cirílico con guillemots)"
+msgstr "Montenegrino (cirílico, con guillemets)"
 
 #: rules/base.xml:4421
 msgid "Montenegrin (Latin, with guillemets)"
-msgstr "Montenegrino (latino con guillemots)"
+msgstr "Montenegrino (latino, con guillemets)"
 
 #. Keyboard indicator for Macedonian layouts
 #: rules/base.xml:4430
@@ -2875,11 +2875,11 @@ msgstr "Serbio (latino Unicode, QWERTY)"
 
 #: rules/base.xml:4944
 msgid "Serbian (Cyrillic, with guillemets)"
-msgstr "Serbio (cirílico con guillemots)"
+msgstr "Serbio (cirílico, con guillemets)"
 
 #: rules/base.xml:4950
 msgid "Serbian (Latin, with guillemets)"
-msgstr "Serbio (latino con guillemots)"
+msgstr "Serbio (latino, con guillemets)"
 
 #: rules/base.xml:4956
 msgid "Pannonian Rusyn"
@@ -2896,7 +2896,7 @@ msgstr "Esloveno"
 
 #: rules/base.xml:4978
 msgid "Slovenian (with guillemets)"
-msgstr "Serbio (con guillemots)"
+msgstr "Esloveno (con guillemets)"
 
 #: rules/base.xml:4984
 msgid "Slovenian (US)"
@@ -5346,9 +5346,6 @@ msgstr "Cambiar por parentesis cuadrados"
 #~ msgid "Urdu (alternative phonetic)"
 #~ msgstr "Urdu (fonético alternativo)"
 
-#~ msgid "Bosnian (with guillemets for quotes)"
-#~ msgstr "Bosnio (usar guillemots para comillas)"
-
 #~ msgid "Bosnian (US keyboard with Bosnian digraphs)"
 #~ msgstr "Bosnio (teclado de EE. UU. con dígrafos bosnios)"
 
@@ -5360,9 +5357,6 @@ msgstr "Cambiar por parentesis cuadrados"
 
 #~ msgid "Cameroon Multilingual (azerty)"
 #~ msgstr "Camerunés multilingüe (azerty)"
-
-#~ msgid "Croatian (with guillemets for quotes)"
-#~ msgstr "Croata (usar guillemots para comillas)"
 
 #~ msgid "Croatian (US keyboard with Croatian digraphs)"
 #~ msgstr "Croata (teclado de EE. UU. con dígrafos croatas)"
@@ -5456,9 +5450,6 @@ msgstr "Cambiar por parentesis cuadrados"
 
 #~ msgid "Serbian (Latin Unicode qwerty)"
 #~ msgstr "Serbio (latino Unicode qwerty)"
-
-#~ msgid "Slovenian (with guillemets for quotes)"
-#~ msgstr "Esloveno (con guillemots para comillas)"
 
 #~ msgid "Slovak (qwerty, extended Backslash)"
 #~ msgstr "Eslovaco (qwerty, contrabarra extendida)"
@@ -6059,9 +6050,6 @@ msgstr "Cambiar por parentesis cuadrados"
 
 #~ msgid "With EuroSign on 5"
 #~ msgstr "Con símbolo del Euro a la tecla 5"
-
-#~ msgid "With guillemets"
-#~ msgstr "Con guillemots"
 
 #~ msgid "Zaf"
 #~ msgstr "Zaf"
