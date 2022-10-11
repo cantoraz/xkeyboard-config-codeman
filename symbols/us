@@ -2323,3 +2323,8 @@ xkb_symbols "de_se_fi"  {
 
     include "level3(ralt_switch)"
 };
+
+partial alphanumeric_keys modifier_keys
+xkb_symbols "codeman" {
+    include "codeman(std)"
+};
