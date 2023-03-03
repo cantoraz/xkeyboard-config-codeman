@@ -1,5 +1,5 @@
 diff --git a/rules/base.xml b/rules/base.xml
-index 70c03b8d..d378cfe0 100644
+index eff2f941..87a8a266 100644
 --- a/rules/base.xml
 +++ b/rules/base.xml
 @@ -1532,6 +1532,12 @@
@@ -17,10 +17,10 @@ index 70c03b8d..d378cfe0 100644
      <layout>
 diff --git a/symbols/codeman b/symbols/codeman
 new file mode 100644
-index 00000000..2b773212
+index 00000000..7ab292f2
 --- /dev/null
 +++ b/symbols/codeman
-@@ -0,0 +1,158 @@
+@@ -0,0 +1,157 @@
 +// Created by Cantoraz Zhou <cantoraz@gmail.com>
 +//
 +// The Codeman layout has same alpha-numeric keys of level 1 and level 2
@@ -177,13 +177,12 @@ index 00000000..2b773212
 +    type[Group1]="TWO_LEVEL",
 +    symbols[Group1] = [ ISO_Level3_Shift, Multi_key ]
 +  };
-+  include "level3(modifier_mapping)"
 +};
 diff --git a/symbols/us b/symbols/us
-index 7456c2ad..e5d305bf 100644
+index 914e6166..7b29b074 100644
 --- a/symbols/us
 +++ b/symbols/us
-@@ -2323,3 +2323,8 @@ xkb_symbols "de_se_fi"  {
+@@ -2321,3 +2321,8 @@ xkb_symbols "de_se_fi"  {
  
      include "level3(ralt_switch)"
  };
