@@ -1,8 +1,8 @@
 diff --git a/rules/base.xml b/rules/base.xml
-index eff2f941..87a8a266 100644
+index dca28e11..129784d8 100644
 --- a/rules/base.xml
 +++ b/rules/base.xml
-@@ -1532,6 +1532,12 @@
+@@ -1539,6 +1539,12 @@
              <description>English (Workman, intl., with dead keys)</description>
             </configItem>
           </variant>
@@ -179,10 +179,10 @@ index 00000000..7ab292f2
 +  };
 +};
 diff --git a/symbols/us b/symbols/us
-index 914e6166..7b29b074 100644
+index b628701c..cbb6ae9d 100644
 --- a/symbols/us
 +++ b/symbols/us
-@@ -2321,3 +2321,8 @@ xkb_symbols "de_se_fi"  {
+@@ -2338,3 +2338,8 @@ xkb_symbols "de_se_fi"  {
  
      include "level3(ralt_switch)"
  };
