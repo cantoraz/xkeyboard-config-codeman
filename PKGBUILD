@@ -1,7 +1,7 @@
 # Maintainer: Cantoraz Zhou <cantoraz@gmail.com>
 
 pkgname=xkeyboard-config+codeman
-pkgver=2.38
+pkgver=2.39
 pkgrel=1
 pkgdesc="X keyboard configuration files, extended with Codeman layout"
 arch=(any)
@@ -14,9 +14,9 @@ conflicts=('xkbdata' 'xkeyboard-config')
 source=(https://xorg.freedesktop.org/archive/individual/data/${pkgname%+*}/${pkgname%+*}-${pkgver}.tar.xz{,.sig}
         codeman.patch)
 validpgpkeys=('FFB4CCD275AAA422F5F9808E0661D98FC933A145') # Sergey Udaltsov <sergey.udaltsov@gmail.com>
-sha256sums=('0690a91bab86b18868f3eee6d41e9ec4ce6894f655443d490a2184bfac56c872'
+sha256sums=('5ac5f533eff7b0c116805fe254fd79b2c9882700a4f9f2c070f8c4eae5aaa682'
             'SKIP'
-            '94da90e04af6c0a60c2116275dfb5c0b0052c4321441b69d9192804984686fb7')
+            'bf64718f0e9ea889a18f21b32c62b811dfa2da8a0a74a21af8b90ac6b63fc930')
 
 prepare() {
   cd ${pkgname%+*}-${pkgver}

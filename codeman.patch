@@ -1,8 +1,8 @@
 diff --git a/rules/base.xml b/rules/base.xml
-index dca28e11..129784d8 100644
+index 603787e4..0df8e361 100644
 --- a/rules/base.xml
 +++ b/rules/base.xml
-@@ -1539,6 +1539,12 @@
+@@ -1550,6 +1550,12 @@
              <description>English (Workman, intl., with dead keys)</description>
             </configItem>
           </variant>
@@ -17,7 +17,7 @@ index dca28e11..129784d8 100644
      <layout>
 diff --git a/symbols/codeman b/symbols/codeman
 new file mode 100644
-index 00000000..7ab292f2
+index 00000000..fbf1c7ca
 --- /dev/null
 +++ b/symbols/codeman
 @@ -0,0 +1,157 @@
@@ -153,7 +153,7 @@ index 00000000..7ab292f2
 +// ┃             ┃     │     │     │     │     │     │     │     │     │     ┃               ┃
 +// ┃             ┃     │     │     │     │     │     │     │     │     │     ┃               ┃
 +// ┣━━━━━┳━━━━━━━╋━━━━━╈━━━━━╅─────┴─────┴─────┴─────┴─────╆━━━━━╈━━━━━╈━━━━━╋━━━━━━━━━━━━━━━┛
-+// ┃     ┃       ┃     ┃     ┃                             ┃ Comp┃     ┃     ┃
++// ┃     ┃       ┃     ┃     ┃                             ┃     ┃     ┃     ┃
 +// ┃     ┃       ┃     ┃     ┃                             ┃AltGr┃     ┃     ┃
 +// ┗━━━━━┻━━━━━━━┻━━━━━┻━━━━━┹─────────────────────────────┺━━━━━┻━━━━━┻━━━━━┛
 +// <CAPS> -> ISO_Level5_Shift <AC11> -> ISO_Level5_Shift
@@ -168,21 +168,21 @@ index 00000000..7ab292f2
 +  include "level5(caps_switch)"
 +
 +  key <AC11> {
-+  type = "ONE_LEVEL",
++    type = "ONE_LEVEL",
 +    symbols[Group1] = [ ISO_Level5_Shift ]
 +  };
 +
 +  // 1st Row
 +  key <COMP> {
-+    type[Group1]="TWO_LEVEL",
-+    symbols[Group1] = [ ISO_Level3_Shift, Multi_key ]
++    type[Group1]="ONE_LEVEL",
++    symbols[Group1] = [ ISO_Level3_Shift ]
 +  };
 +};
 diff --git a/symbols/us b/symbols/us
-index b628701c..cbb6ae9d 100644
+index b3d4ef6c..5e562a51 100644
 --- a/symbols/us
 +++ b/symbols/us
-@@ -2338,3 +2338,8 @@ xkb_symbols "de_se_fi"  {
+@@ -2348,3 +2348,8 @@ xkb_symbols "de_se_fi"  {
  
      include "level3(ralt_switch)"
  };
