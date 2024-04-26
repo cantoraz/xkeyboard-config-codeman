@@ -1,5 +1,5 @@
 diff --git a/rules/base.xml b/rules/base.xml
-index 370ff3d6..0d4641b3 100644
+index ad4df7c8..e7de48d0 100644
 --- a/rules/base.xml
 +++ b/rules/base.xml
 @@ -3183,6 +3183,12 @@
