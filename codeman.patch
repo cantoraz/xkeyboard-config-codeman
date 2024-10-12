@@ -1,8 +1,8 @@
 diff --git a/rules/base.xml b/rules/base.xml
-index ad4df7c8..e7de48d0 100644
+index 03b80726..67bd2697 100644
 --- a/rules/base.xml
 +++ b/rules/base.xml
-@@ -3183,6 +3183,12 @@
+@@ -3142,6 +3142,12 @@
              </languageList>
            </configItem>
          </variant>
@@ -179,10 +179,10 @@ index 00000000..fbf1c7ca
 +  };
 +};
 diff --git a/symbols/us b/symbols/us
-index 0d8d8851..58c83ea2 100644
+index 80f884aa..27cf929e 100644
 --- a/symbols/us
 +++ b/symbols/us
-@@ -2346,3 +2346,8 @@ xkb_symbols "de_se_fi"  {
+@@ -2228,3 +2228,8 @@ xkb_symbols "de_se_fi"  {
  
      include "level3(ralt_switch)"
  };
