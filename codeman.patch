@@ -17,10 +17,10 @@ index 03b80726..67bd2697 100644
      <layout>
 diff --git a/symbols/codeman b/symbols/codeman
 new file mode 100644
-index 00000000..fbf1c7ca
+index 00000000..ba23b8fa
 --- /dev/null
 +++ b/symbols/codeman
-@@ -0,0 +1,157 @@
+@@ -0,0 +1,161 @@
 +// Created by Cantoraz Zhou <cantoraz@gmail.com>
 +//
 +// The Codeman layout has same alpha-numeric keys of level 1 and level 2
@@ -177,6 +177,10 @@ index 00000000..fbf1c7ca
 +    type[Group1]="ONE_LEVEL",
 +    symbols[Group1] = [ ISO_Level3_Shift ]
 +  };
++
++  // <Hyper> is mapping to Mod3, which conflicts with LevelFive.
++  // Map <Hyper> to Mod4, and give up separate <Super>.
++  modifier_map Mod4 { <HYPR> };
 +};
 diff --git a/symbols/us b/symbols/us
 index 80f884aa..27cf929e 100644
